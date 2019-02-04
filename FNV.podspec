@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "FNV"
-s.version      = "1.0.1"
+s.version      = "1.0.2"
 s.summary      = "FNV Hash Algorithm by Swift."
 s.homepage     = "https://github.com/daisuke-t-jp/FNV"
 s.license      = "MIT"
