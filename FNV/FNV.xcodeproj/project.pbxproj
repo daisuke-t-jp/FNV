@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		021D668D220816C300D88FC1 /* FNV.h in Headers */ = {isa = PBXBuildFile; fileRef = 029D31672207CCB9009FA98A /* FNV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		021D668F220816C300D88FC1 /* FNV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D317E2207CCD0009FA98A /* FNV.swift */; };
+		021D669B2208195300D88FC1 /* FNVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D31722207CCB9009FA98A /* FNVTests.swift */; };
+		021D669D2208195300D88FC1 /* FNV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029D31642207CCB9009FA98A /* FNV.framework */; };
+		029D316E2207CCB9009FA98A /* FNV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029D31642207CCB9009FA98A /* FNV.framework */; };
+		029D31732207CCB9009FA98A /* FNVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D31722207CCB9009FA98A /* FNVTests.swift */; };
+		029D31752207CCB9009FA98A /* FNV.h in Headers */ = {isa = PBXBuildFile; fileRef = 029D31672207CCB9009FA98A /* FNV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		029D317F2207CCD0009FA98A /* FNV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D317E2207CCD0009FA98A /* FNV.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		021D66992208195300D88FC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 029D315B2207CCB9009FA98A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 029D31632207CCB9009FA98A;
+			remoteInfo = FNV;
+		};
+		029D316F2207CCB9009FA98A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 029D315B2207CCB9009FA98A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 029D31632207CCB9009FA98A;
+			remoteInfo = FNV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		021D6695220816C300D88FC1 /* FNV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FNV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		021D66A22208195300D88FC1 /* FNVTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FNVTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		029D31642207CCB9009FA98A /* FNV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FNV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		029D31672207CCB9009FA98A /* FNV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNV.h; sourceTree = "<group>"; };
+		029D31682207CCB9009FA98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		029D316D2207CCB9009FA98A /* FNVTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FNVTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		029D31722207CCB9009FA98A /* FNVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNVTests.swift; sourceTree = "<group>"; };
+		029D31742207CCB9009FA98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		029D317E2207CCD0009FA98A /* FNV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNV.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		021D6690220816C300D88FC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		021D669C2208195300D88FC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021D669D2208195300D88FC1 /* FNV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		029D31612207CCB9009FA98A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		029D316A2207CCB9009FA98A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				029D316E2207CCB9009FA98A /* FNV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		029D315A2207CCB9009FA98A = {
+			isa = PBXGroup;
+			children = (
+				029D31662207CCB9009FA98A /* FNV */,
+				029D31712207CCB9009FA98A /* FNVTests */,
+				029D31652207CCB9009FA98A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		029D31652207CCB9009FA98A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				029D31642207CCB9009FA98A /* FNV.framework */,
+				029D316D2207CCB9009FA98A /* FNVTests-iOS.xctest */,
+				021D6695220816C300D88FC1 /* FNV.framework */,
+				021D66A22208195300D88FC1 /* FNVTests-macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		029D31662207CCB9009FA98A /* FNV */ = {
+			isa = PBXGroup;
+			children = (
+				029D31682207CCB9009FA98A /* Info.plist */,
+				029D31672207CCB9009FA98A /* FNV.h */,
+				029D317E2207CCD0009FA98A /* FNV.swift */,
+			);
+			path = FNV;
+			sourceTree = "<group>";
+		};
+		029D31712207CCB9009FA98A /* FNVTests */ = {
+			isa = PBXGroup;
+			children = (
+				029D31722207CCB9009FA98A /* FNVTests.swift */,
+				029D31742207CCB9009FA98A /* Info.plist */,
+			);
+			path = FNVTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		021D668C220816C300D88FC1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021D668D220816C300D88FC1 /* FNV.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		029D315F2207CCB9009FA98A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				029D31752207CCB9009FA98A /* FNV.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		021D668B220816C300D88FC1 /* FNV-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 021D6692220816C300D88FC1 /* Build configuration list for PBXNativeTarget "FNV-macOS" */;
+			buildPhases = (
+				021D668C220816C300D88FC1 /* Headers */,
+				021D668E220816C300D88FC1 /* Sources */,
+				021D6690220816C300D88FC1 /* Frameworks */,
+				021D6691220816C300D88FC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FNV-macOS";
+			productName = FNV;
+			productReference = 021D6695220816C300D88FC1 /* FNV.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		021D66972208195300D88FC1 /* FNVTests-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 021D669F2208195300D88FC1 /* Build configuration list for PBXNativeTarget "FNVTests-macOS" */;
+			buildPhases = (
+				021D669A2208195300D88FC1 /* Sources */,
+				021D669C2208195300D88FC1 /* Frameworks */,
+				021D669E2208195300D88FC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				021D66982208195300D88FC1 /* PBXTargetDependency */,
+			);
+			name = "FNVTests-macOS";
+			productName = FNVTests;
+			productReference = 021D66A22208195300D88FC1 /* FNVTests-macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		029D31632207CCB9009FA98A /* FNV-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 029D31782207CCB9009FA98A /* Build configuration list for PBXNativeTarget "FNV-iOS" */;
+			buildPhases = (
+				029D315F2207CCB9009FA98A /* Headers */,
+				029D31602207CCB9009FA98A /* Sources */,
+				029D31612207CCB9009FA98A /* Frameworks */,
+				029D31622207CCB9009FA98A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FNV-iOS";
+			productName = FNV;
+			productReference = 029D31642207CCB9009FA98A /* FNV.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		029D316C2207CCB9009FA98A /* FNVTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 029D317B2207CCB9009FA98A /* Build configuration list for PBXNativeTarget "FNVTests-iOS" */;
+			buildPhases = (
+				029D31692207CCB9009FA98A /* Sources */,
+				029D316A2207CCB9009FA98A /* Frameworks */,
+				029D316B2207CCB9009FA98A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				029D31702207CCB9009FA98A /* PBXTargetDependency */,
+			);
+			name = "FNVTests-iOS";
+			productName = FNVTests;
+			productReference = 029D316D2207CCB9009FA98A /* FNVTests-iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		029D315B2207CCB9009FA98A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = FNV;
+				TargetAttributes = {
+					029D31632207CCB9009FA98A = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					029D316C2207CCB9009FA98A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 029D315E2207CCB9009FA98A /* Build configuration list for PBXProject "FNV" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 029D315A2207CCB9009FA98A;
+			productRefGroup = 029D31652207CCB9009FA98A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				029D31632207CCB9009FA98A /* FNV-iOS */,
+				021D668B220816C300D88FC1 /* FNV-macOS */,
+				029D316C2207CCB9009FA98A /* FNVTests-iOS */,
+				021D66972208195300D88FC1 /* FNVTests-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		021D6691220816C300D88FC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		021D669E2208195300D88FC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		029D31622207CCB9009FA98A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		029D316B2207CCB9009FA98A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		021D668E220816C300D88FC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021D668F220816C300D88FC1 /* FNV.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		021D669A2208195300D88FC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021D669B2208195300D88FC1 /* FNVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		029D31602207CCB9009FA98A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				029D317F2207CCD0009FA98A /* FNV.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		029D31692207CCB9009FA98A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				029D31732207CCB9009FA98A /* FNVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		021D66982208195300D88FC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 029D31632207CCB9009FA98A /* FNV-iOS */;
+			targetProxy = 021D66992208195300D88FC1 /* PBXContainerItemProxy */;
+		};
+		029D31702207CCB9009FA98A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 029D31632207CCB9009FA98A /* FNV-iOS */;
+			targetProxy = 029D316F2207CCB9009FA98A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		021D6693220816C300D88FC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FNV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FNV.FNV-macOS";
+				PRODUCT_NAME = FNV;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		021D6694220816C300D88FC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FNV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FNV.FNV-macOS";
+				PRODUCT_NAME = FNV;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		021D66A02208195300D88FC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FNVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FNV.FNVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		021D66A12208195300D88FC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FNVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FNV.FNVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		029D31762207CCB9009FA98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		029D31772207CCB9009FA98A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		029D31792207CCB9009FA98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FNV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FNV.FNV-iOS";
+				PRODUCT_NAME = FNV;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		029D317A2207CCB9009FA98A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FNV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FNV.FNV-iOS";
+				PRODUCT_NAME = FNV;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		029D317C2207CCB9009FA98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FNVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FNV.FNVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		029D317D2207CCB9009FA98A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FNVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FNV.FNVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		021D6692220816C300D88FC1 /* Build configuration list for PBXNativeTarget "FNV-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				021D6693220816C300D88FC1 /* Debug */,
+				021D6694220816C300D88FC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		021D669F2208195300D88FC1 /* Build configuration list for PBXNativeTarget "FNVTests-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				021D66A02208195300D88FC1 /* Debug */,
+				021D66A12208195300D88FC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		029D315E2207CCB9009FA98A /* Build configuration list for PBXProject "FNV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				029D31762207CCB9009FA98A /* Debug */,
+				029D31772207CCB9009FA98A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		029D31782207CCB9009FA98A /* Build configuration list for PBXNativeTarget "FNV-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				029D31792207CCB9009FA98A /* Debug */,
+				029D317A2207CCB9009FA98A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		029D317B2207CCB9009FA98A /* Build configuration list for PBXNativeTarget "FNVTests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				029D317C2207CCB9009FA98A /* Debug */,
+				029D317D2207CCB9009FA98A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 029D315B2207CCB9009FA98A /* Project object */;
+}
