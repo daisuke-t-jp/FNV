@@ -1,0 +1,16 @@
+PODS:
+  - FNV (1.0.0)
+
+DEPENDENCIES:
+  - FNV (from `../../`)
+
+EXTERNAL SOURCES:
+  FNV:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  FNV: 571509caf9a7a9af40e93d3e20f73b816d8a5642
+
+PODFILE CHECKSUM: dc9dd8a025ea1cacb23b940c5a0e16f64a79f154
+
+COCOAPODS: 1.5.3
