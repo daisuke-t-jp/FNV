@@ -1,0 +1,22 @@
+language: objective-c
+osx_image: xcode10
+
+env:
+  global:
+
+before_install:
+
+script:
+  - swift --version
+  
+  # macOS
+  - xcodebuild clean -project "FNV/FNV.xcodeproj" 
+  - xcodebuild test -project "FNV/FNV.xcodeproj" -scheme "FNV-macOS" -destination "platform=OS X" -configuration Debug
+
+  # iOS
+  - xcodebuild clean -project "FNV/FNV.xcodeproj" 
+  - xcodebuild test -project "FNV/FNV.xcodeproj" -scheme "FNV-iOS" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone X" -configuration Debug
+
+branches:
+  only: 
+      - master
