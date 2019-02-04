@@ -2,7 +2,6 @@
 FNV Hash Algorithm by Swift.
 
 ![Platform](https://img.shields.io/badge/Platform-iOS%2010.0+-blue.svg)
-![Platform](https://img.shields.io/badge/Platform-macOS%2012.0+-blue.svg)
 [![Language Swift%204.2](https://img.shields.io/badge/Language-Swift%204.2-orange.svg)](https://developer.apple.com/swift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-green.svg)](https://github.com/Carthage/Carthage)
 [![Cocoapods](https://img.shields.io/cocoapods/v/FNV.svg)](https://cocoapods.org/pods/FNV)
