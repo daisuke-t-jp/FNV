@@ -1,17 +1,20 @@
-# FNV
-FNV Hash Algorithm by Swift.
-
+<img src="https://github.com/daisuke-t-jp/FNV/blob/master/doc/header.png" width="700"></br>
+------
 ![Platform](https://img.shields.io/badge/Platform-iOS%2010.0+-blue.svg)
+![Platform](https://img.shields.io/badge/Platform-macOS%2012.0+-blue.svg)
 [![Language Swift%204.2](https://img.shields.io/badge/Language-Swift%204.2-orange.svg)](https://developer.apple.com/swift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-green.svg)](https://github.com/Carthage/Carthage)
 [![Cocoapods](https://img.shields.io/cocoapods/v/FNV.svg)](https://cocoapods.org/pods/FNV)
 [![Build Status](https://travis-ci.org/daisuke-t-jp/FNV.svg?branch=master)](https://travis-ci.org/daisuke-t-jp/FNV)
 
 
+# What is this?
 
-# FNV Algorithm
-
-http://www.isthe.com/chongo/tech/comp/fnv/
+This is **FNV** (Fowler/Noll/Vo) hash framework by Swift.  
+Framework include *FNV-0 32/64bit*, *FNV-1 32/64bit*, *FNV-1a 32/64bit* functions.  
+  
+See also
+- [FNV Hash](http://www.isthe.com/chongo/tech/comp/fnv/)
 
 
 # Install
