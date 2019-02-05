@@ -3,6 +3,7 @@ s.name         = "FNV"
 s.version      = "1.0.2"
 s.summary      = "FNV Hash Algorithm by Swift."
 s.homepage     = "https://github.com/daisuke-t-jp/FNV"
+s.screenshots  = "https://raw.githubusercontent.com/daisuke-t-jp/FNV/master/doc/header.png"
 s.license      = "MIT"
 s.author       = { "daisuke-t-jp" => "daisuke.t.jp@gmail.com" }
 
