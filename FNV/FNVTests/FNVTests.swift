@@ -33,8 +33,8 @@ class FNVTests: XCTestCase {
 
 		for elm in map.keys {
 			let val = map[elm]
-			XCTAssertEqual(FNV.fnv0_32(elm), val)	// String
 			XCTAssertEqual(FNV.fnv0_32(Array(elm.utf8)), val)	// [UInt8]
+			XCTAssertEqual(FNV.fnv0_32(elm), val)	// String
 			XCTAssertEqual(FNV.fnv0_32(elm.data(using: .utf8)!), val)	// Data
 		}
 	}
@@ -52,8 +52,8 @@ class FNVTests: XCTestCase {
 		
 		for elm in map.keys {
 			let val = map[elm]
-			XCTAssertEqual(FNV.fnv0_64(elm), val)	// String
 			XCTAssertEqual(FNV.fnv0_64(Array(elm.utf8)), val)	// [UInt8]
+			XCTAssertEqual(FNV.fnv0_64(elm), val)	// String
 			XCTAssertEqual(FNV.fnv0_64(elm.data(using: .utf8)!), val)	// Data
 		}
 	}
@@ -74,8 +74,8 @@ class FNVTests: XCTestCase {
 
 		for elm in map.keys {
 			let val = map[elm]
-			XCTAssertEqual(FNV.fnv1_32(elm), val)	// String
 			XCTAssertEqual(FNV.fnv1_32(Array(elm.utf8)), val)	// [UInt8]
+			XCTAssertEqual(FNV.fnv1_32(elm), val)	// String
 			XCTAssertEqual(FNV.fnv1_32(elm.data(using: .utf8)!), val)	// Data
 		}
 	}
@@ -93,8 +93,8 @@ class FNVTests: XCTestCase {
 		
 		for elm in map.keys {
 			let val = map[elm]
-			XCTAssertEqual(FNV.fnv1_64(elm), val)	// String
 			XCTAssertEqual(FNV.fnv1_64(Array(elm.utf8)), val)	// [UInt8]
+			XCTAssertEqual(FNV.fnv1_64(elm), val)	// String
 			XCTAssertEqual(FNV.fnv1_64(elm.data(using: .utf8)!), val)	// Data
 		}
 	}
@@ -115,8 +115,8 @@ class FNVTests: XCTestCase {
 		
 		for elm in map.keys {
 			let val = map[elm]
-			XCTAssertEqual(FNV.fnv1a_32(elm), val)	// String
 			XCTAssertEqual(FNV.fnv1a_32(Array(elm.utf8)), val)	// [UInt8]
+			XCTAssertEqual(FNV.fnv1a_32(elm), val)	// String
 			XCTAssertEqual(FNV.fnv1a_32(elm.data(using: .utf8)!), val)	// Data
 		}
 	}
@@ -134,8 +134,8 @@ class FNVTests: XCTestCase {
 		
 		for elm in map.keys {
 			let val = map[elm]
-			XCTAssertEqual(FNV.fnv1a_64(elm), val)	// String
 			XCTAssertEqual(FNV.fnv1a_64(Array(elm.utf8)), val)	// [UInt8]
+			XCTAssertEqual(FNV.fnv1a_64(elm), val)	// String
 			XCTAssertEqual(FNV.fnv1a_64(elm.data(using: .utf8)!), val)	// Data
 		}
 	}

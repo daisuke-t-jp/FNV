@@ -48,14 +48,14 @@ public class FNV {
 	
 	
 	// MARK: - FNV-0 32bit
+	static public func fnv0_32(_ array: [UInt8]) -> UInt32 {
+		return fnv1(array, offsetBasis: 0, prime: prime32)
+	}
+	
 	static public func fnv0_32(_ string: String) -> UInt32 {
 		return fnv1(Array(string.utf8), offsetBasis: 0, prime: prime32)
 	}
 	
-	static public func fnv0_32(_ array: [UInt8]) -> UInt32 {
-		return fnv1(array, offsetBasis: 0, prime: prime32)
-	}
-
 	static public func fnv0_32(_ data: Data) -> UInt32 {
 		return fnv1([UInt8](data), offsetBasis: 0, prime: prime32)
 	}
@@ -63,12 +63,12 @@ public class FNV {
 	
 	
 	// MARK: - FNV-0 64bit
-	static public func fnv0_64(_ string: String) -> UInt64 {
-		return fnv1(Array(string.utf8), offsetBasis: 0, prime: prime64)
-	}
-	
 	static public func fnv0_64(_ array: [UInt8]) -> UInt64 {
 		return fnv1(array, offsetBasis: 0, prime: prime64)
+	}
+	
+	static public func fnv0_64(_ string: String) -> UInt64 {
+		return fnv1(Array(string.utf8), offsetBasis: 0, prime: prime64)
 	}
 	
 	static public func fnv0_64(_ data: Data) -> UInt64 {
@@ -78,12 +78,12 @@ public class FNV {
 	
 	
 	// MARK: - FNV-1 32bit
-	static public func fnv1_32(_ string: String) -> UInt32 {
-		return fnv1(Array(string.utf8), offsetBasis: offsetBasis32, prime: prime32)
-	}
-	
 	static public func fnv1_32(_ array: [UInt8]) -> UInt32 {
 		return fnv1(array, offsetBasis: offsetBasis32, prime: prime32)
+	}
+	
+	static public func fnv1_32(_ string: String) -> UInt32 {
+		return fnv1(Array(string.utf8), offsetBasis: offsetBasis32, prime: prime32)
 	}
 	
 	static public func fnv1_32(_ data: Data) -> UInt32 {
@@ -93,12 +93,12 @@ public class FNV {
 	
 	
 	// MARK: - FNV-1 64bit
-	static public func fnv1_64(_ string: String) -> UInt64 {
-		return fnv1(Array(string.utf8), offsetBasis: offsetBasis64, prime: prime64)
-	}
-	
 	static public func fnv1_64(_ array: [UInt8]) -> UInt64 {
 		return fnv1(array, offsetBasis: offsetBasis64, prime: prime64)
+	}
+	
+	static public func fnv1_64(_ string: String) -> UInt64 {
+		return fnv1(Array(string.utf8), offsetBasis: offsetBasis64, prime: prime64)
 	}
 	
 	static public func fnv1_64(_ data: Data) -> UInt64 {
