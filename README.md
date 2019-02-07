@@ -12,7 +12,7 @@
 This is **FNV** (Fowler/Noll/Vo) hash framework by Swift.  
 Framework include *FNV-0 32/64bit*, *FNV-1 32/64bit*, *FNV-1a 32/64bit* functions.  
   
-See also
+Reference :
 - [FNV Hash](http://www.isthe.com/chongo/tech/comp/fnv/)
 
 
@@ -34,36 +34,88 @@ end
 ``` swift
 import FNV
 
-// FNV-0 32bit
-FNV.fnv0_32(Array("string".utf8)) // [UInt8]
-FNV.fnv0_32("string")	// String
-FNV.fnv0_32("string".data(using: .utf8)!)	// Data
 
-// FNV-0 64bit
-FNV.fnv0_64(Array("string".utf8)) // [UInt8]
-FNV.fnv0_64("string")	// String
-FNV.fnv0_64("string".data(using: .utf8)!)	// Data
 
-// FNV-1 32bit
-FNV.fnv1_32(Array("string".utf8)) // [UInt8]
-FNV.fnv1_32("string")	// String
-FNV.fnv1_32("string".data(using: .utf8)!)	// Data
+// MARK: - FNV-0
+/**
+ * 32bit hash
+ */
+// Generate from [UInt8].
+let hash = FNV.fnv0_32(Array("string".utf8))
 
-// FNV-1 64bit
-FNV.fnv1_64(Array("string".utf8)) // [UInt8]
-FNV.fnv1_64("string")	// String
-FNV.fnv1_64("string".data(using: .utf8)!)	// Data
+// Generate from String.
+let hash = FNV.fnv0_32("string")
+
+// Generate from Data.
+let hash = FNV.fnv0_32("string".data(using: .utf8)!)
+
+
+/**
+ * 64bit hash
+ */
+// Generate from [UInt8].
+FNV.fnv0_64(Array("string".utf8))
+
+// Generate from String.
+FNV.fnv0_64("string")
+
+// Generate from Data.
+FNV.fnv0_64("string".data(using: .utf8)!)
+
+
+
+// MARK: - FNV-1
+/**
+ * 32bit hash
+ */
+// Generate from [UInt8].
+FNV.fnv1_32(Array("string".utf8))
+
+// Generate from String.
+FNV.fnv1_32("string")
+
+// Generate from Data.
+FNV.fnv1_32("string".data(using: .utf8)!)
+
+
+/**
+ * 64bit hash
+ */
+// Generate from [UInt8].
+FNV.fnv1_64(Array("string".utf8))
+
+// Generate from String.
+FNV.fnv1_64("string")
+
+// Generate from Data.
+FNV.fnv1_64("string".data(using: .utf8)!)
                 
-// FNV-1a 32bit
-FNV.fnv1a_32(Array("string".utf8)) // [UInt8]
-FNV.fnv1a_32("string")	// String
-FNV.fnv1a_32("string".data(using: .utf8)!)	// Data
 
-// FNV-1a 64bit
-FNV.fnv1a_64(Array("string".utf8)) // [UInt8]
-FNV.fnv1a_64("string")	// String
-FNV.fnv1a_64("string".data(using: .utf8)!)	// Data
+
+// MARK: - FNV-1a
+/**
+ * 32bit hash
+ */
+// Generate from [UInt8].
+FNV.fnv1a_32(Array("string".utf8))
+
+// Generate from String.
+FNV.fnv1a_32("string")
+
+// Generate from Data.
+FNV.fnv1a_32("string".data(using: .utf8)!)
+
+
+/**
+ * 64bit hash
+ */
+// Generate from [UInt8].
+FNV.fnv1a_64(Array("string".utf8))
+
+// Generate from String.
+FNV.fnv1a_64("string")
+
+// Generate from Data.
+FNV.fnv1a_64("string".data(using: .utf8)!)
+
 ```
-
-
-
