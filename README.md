@@ -54,13 +54,13 @@ let hash = FNV.fnv0_32("string".data(using: .utf8)!)
  * 64bit hash
  */
 // Generate from [UInt8].
-FNV.fnv0_64(Array("string".utf8))
+let hash = FNV.fnv0_64(Array("string".utf8))
 
 // Generate from String.
-FNV.fnv0_64("string")
+let hash = FNV.fnv0_64("string")
 
 // Generate from Data.
-FNV.fnv0_64("string".data(using: .utf8)!)
+let hash = FNV.fnv0_64("string".data(using: .utf8)!)
 
 
 
@@ -69,26 +69,26 @@ FNV.fnv0_64("string".data(using: .utf8)!)
  * 32bit hash
  */
 // Generate from [UInt8].
-FNV.fnv1_32(Array("string".utf8))
+let hash = FNV.fnv1_32(Array("string".utf8))
 
 // Generate from String.
-FNV.fnv1_32("string")
+let hash = FNV.fnv1_32("string")
 
 // Generate from Data.
-FNV.fnv1_32("string".data(using: .utf8)!)
+let hash = FNV.fnv1_32("string".data(using: .utf8)!)
 
 
 /**
  * 64bit hash
  */
 // Generate from [UInt8].
-FNV.fnv1_64(Array("string".utf8))
+let hash = FNV.fnv1_64(Array("string".utf8))
 
 // Generate from String.
-FNV.fnv1_64("string")
+let hash = FNV.fnv1_64("string")
 
 // Generate from Data.
-FNV.fnv1_64("string".data(using: .utf8)!)
+let hash = FNV.fnv1_64("string".data(using: .utf8)!)
                 
 
 
@@ -97,25 +97,25 @@ FNV.fnv1_64("string".data(using: .utf8)!)
  * 32bit hash
  */
 // Generate from [UInt8].
-FNV.fnv1a_32(Array("string".utf8))
+let hash = FNV.fnv1a_32(Array("string".utf8))
 
 // Generate from String.
-FNV.fnv1a_32("string")
+let hash = FNV.fnv1a_32("string")
 
 // Generate from Data.
-FNV.fnv1a_32("string".data(using: .utf8)!)
+let hash = FNV.fnv1a_32("string".data(using: .utf8)!)
 
 
 /**
  * 64bit hash
  */
 // Generate from [UInt8].
-FNV.fnv1a_64(Array("string".utf8))
+let hash = FNV.fnv1a_64(Array("string".utf8))
 
 // Generate from String.
-FNV.fnv1a_64("string")
+let hash = FNV.fnv1a_64("string")
 
 // Generate from Data.
-FNV.fnv1a_64("string".data(using: .utf8)!)
+let hash = FNV.fnv1a_64("string".data(using: .utf8)!)
 
 ```
