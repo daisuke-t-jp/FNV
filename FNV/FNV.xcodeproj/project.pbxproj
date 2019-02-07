@@ -10,7 +10,7 @@
 		021D668D220816C300D88FC1 /* FNV.h in Headers */ = {isa = PBXBuildFile; fileRef = 029D31672207CCB9009FA98A /* FNV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		021D668F220816C300D88FC1 /* FNV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D317E2207CCD0009FA98A /* FNV.swift */; };
 		021D669B2208195300D88FC1 /* FNVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D31722207CCB9009FA98A /* FNVTests.swift */; };
-		021D669D2208195300D88FC1 /* FNV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029D31642207CCB9009FA98A /* FNV.framework */; };
+		0290FBD7220C0AB20076E82F /* FNV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021D6695220816C300D88FC1 /* FNV.framework */; };
 		029D316E2207CCB9009FA98A /* FNV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029D31642207CCB9009FA98A /* FNV.framework */; };
 		029D31732207CCB9009FA98A /* FNVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D31722207CCB9009FA98A /* FNVTests.swift */; };
 		029D31752207CCB9009FA98A /* FNV.h in Headers */ = {isa = PBXBuildFile; fileRef = 029D31672207CCB9009FA98A /* FNV.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -18,12 +18,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		021D66992208195300D88FC1 /* PBXContainerItemProxy */ = {
+		0290FBD0220C05EF0076E82F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 029D315B2207CCB9009FA98A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 029D31632207CCB9009FA98A;
-			remoteInfo = FNV;
+			remoteGlobalIDString = 021D668B220816C300D88FC1;
+			remoteInfo = "FNV-macOS";
 		};
 		029D316F2207CCB9009FA98A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				021D669D2208195300D88FC1 /* FNV.framework in Frameworks */,
+				0290FBD7220C0AB20076E82F /* FNV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +80,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0290FBD6220C0AB20076E82F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		029D315A2207CCB9009FA98A = {
 			isa = PBXGroup;
 			children = (
 				029D31662207CCB9009FA98A /* FNV */,
 				029D31712207CCB9009FA98A /* FNVTests */,
 				029D31652207CCB9009FA98A /* Products */,
+				0290FBD6220C0AB20076E82F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,7 +178,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				021D66982208195300D88FC1 /* PBXTargetDependency */,
+				0290FBD1220C05EF0076E82F /* PBXTargetDependency */,
 			);
 			name = "FNVTests-macOS";
 			productName = FNVTests;
@@ -319,10 +327,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		021D66982208195300D88FC1 /* PBXTargetDependency */ = {
+		0290FBD1220C05EF0076E82F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 029D31632207CCB9009FA98A /* FNV-iOS */;
-			targetProxy = 021D66992208195300D88FC1 /* PBXContainerItemProxy */;
+			target = 021D668B220816C300D88FC1 /* FNV-macOS */;
+			targetProxy = 0290FBD0220C05EF0076E82F /* PBXContainerItemProxy */;
 		};
 		029D31702207CCB9009FA98A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
