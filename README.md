@@ -35,33 +35,33 @@ end
 import FNV
 
 // FNV-0 32bit
-FNV.fnv0_32("string")	// String
 FNV.fnv0_32(Array("string".utf8)) // [UInt8]
+FNV.fnv0_32("string")	// String
 FNV.fnv0_32("string".data(using: .utf8)!)	// Data
 
 // FNV-0 64bit
-FNV.fnv0_64("string")	// String
 FNV.fnv0_64(Array("string".utf8)) // [UInt8]
+FNV.fnv0_64("string")	// String
 FNV.fnv0_64("string".data(using: .utf8)!)	// Data
 
 // FNV-1 32bit
-FNV.fnv1_32("string")	// String
 FNV.fnv1_32(Array("string".utf8)) // [UInt8]
+FNV.fnv1_32("string")	// String
 FNV.fnv1_32("string".data(using: .utf8)!)	// Data
 
 // FNV-1 64bit
-FNV.fnv1_64("string")	// String
 FNV.fnv1_64(Array("string".utf8)) // [UInt8]
+FNV.fnv1_64("string")	// String
 FNV.fnv1_64("string".data(using: .utf8)!)	// Data
                 
 // FNV-1a 32bit
-FNV.fnv1a_32("string")	// String
 FNV.fnv1a_32(Array("string".utf8)) // [UInt8]
+FNV.fnv1a_32("string")	// String
 FNV.fnv1a_32("string".data(using: .utf8)!)	// Data
 
 // FNV-1a 64bit
-FNV.fnv1a_64("string")	// String
 FNV.fnv1a_64(Array("string".utf8)) // [UInt8]
+FNV.fnv1a_64("string")	// String
 FNV.fnv1a_64("string".data(using: .utf8)!)	// Data
 ```
 
