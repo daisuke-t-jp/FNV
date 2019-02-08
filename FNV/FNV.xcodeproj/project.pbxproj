@@ -359,7 +359,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.FNV.FNV-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FNV.FNV;
 				PRODUCT_NAME = FNV;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -390,7 +390,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.FNV.FNV-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FNV.FNV;
 				PRODUCT_NAME = FNV;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -592,7 +592,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.FNV.FNV-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FNV.FNV;
 				PRODUCT_NAME = FNV;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -623,7 +623,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.FNV.FNV-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FNV.FNV;
 				PRODUCT_NAME = FNV;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
