@@ -9,7 +9,7 @@
 
 # What is this?
 
-This is **FNV** (Fowler/Noll/Vo) hash framework by Swift.  
+This is **FNV** (Fowler/Noll/Vo) hash framework in Swift.  
 Framework include *FNV-0 32/64bit*, *FNV-1 32/64bit*, *FNV-1a 32/64bit* functions.  
   
 Reference :
