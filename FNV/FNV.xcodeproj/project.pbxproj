@@ -15,6 +15,8 @@
 		029D31732207CCB9009FA98A /* FNVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D31722207CCB9009FA98A /* FNVTests.swift */; };
 		029D31752207CCB9009FA98A /* FNV.h in Headers */ = {isa = PBXBuildFile; fileRef = 029D31672207CCB9009FA98A /* FNV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		029D317F2207CCD0009FA98A /* FNV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D317E2207CCD0009FA98A /* FNV.swift */; };
+		7E4FD39122101D4500C1A5C5 /* FNV.h in Headers */ = {isa = PBXBuildFile; fileRef = 029D31672207CCB9009FA98A /* FNV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E4FD39322101D4500C1A5C5 /* FNV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D317E2207CCD0009FA98A /* FNV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		029D31722207CCB9009FA98A /* FNVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNVTests.swift; sourceTree = "<group>"; };
 		029D31742207CCB9009FA98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		029D317E2207CCD0009FA98A /* FNV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNV.swift; sourceTree = "<group>"; };
+		7E4FD39922101D4500C1A5C5 /* FNV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FNV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7E4FD39422101D4500C1A5C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -104,6 +114,7 @@
 				029D316D2207CCB9009FA98A /* FNVTests-iOS.xctest */,
 				021D6695220816C300D88FC1 /* FNV.framework */,
 				021D66A22208195300D88FC1 /* FNVTests-macOS.xctest */,
+				7E4FD39922101D4500C1A5C5 /* FNV.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +154,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				029D31752207CCB9009FA98A /* FNV.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E4FD39022101D4500C1A5C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E4FD39122101D4500C1A5C5 /* FNV.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +240,24 @@
 			productReference = 029D316D2207CCB9009FA98A /* FNVTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		7E4FD38F22101D4500C1A5C5 /* FNV-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E4FD39622101D4500C1A5C5 /* Build configuration list for PBXNativeTarget "FNV-tvOS" */;
+			buildPhases = (
+				7E4FD39022101D4500C1A5C5 /* Headers */,
+				7E4FD39222101D4500C1A5C5 /* Sources */,
+				7E4FD39422101D4500C1A5C5 /* Frameworks */,
+				7E4FD39522101D4500C1A5C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FNV-tvOS";
+			productName = FNV;
+			productReference = 7E4FD39922101D4500C1A5C5 /* FNV.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -254,6 +291,7 @@
 			targets = (
 				029D31632207CCB9009FA98A /* FNV-iOS */,
 				021D668B220816C300D88FC1 /* FNV-macOS */,
+				7E4FD38F22101D4500C1A5C5 /* FNV-tvOS */,
 				029D316C2207CCB9009FA98A /* FNVTests-iOS */,
 				021D66972208195300D88FC1 /* FNVTests-macOS */,
 			);
@@ -283,6 +321,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		029D316B2207CCB9009FA98A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E4FD39522101D4500C1A5C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,6 +366,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				029D31732207CCB9009FA98A /* FNVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E4FD39222101D4500C1A5C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E4FD39322101D4500C1A5C5 /* FNV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,6 +733,69 @@
 			};
 			name = Release;
 		};
+		7E4FD39722101D4500C1A5C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FNV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FNV.FNV;
+				PRODUCT_NAME = FNV;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Debug;
+		};
+		7E4FD39822101D4500C1A5C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FNV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FNV.FNV;
+				PRODUCT_NAME = FNV;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -724,6 +840,15 @@
 			buildConfigurations = (
 				029D317C2207CCB9009FA98A /* Debug */,
 				029D317D2207CCB9009FA98A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E4FD39622101D4500C1A5C5 /* Build configuration list for PBXNativeTarget "FNV-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E4FD39722101D4500C1A5C5 /* Debug */,
+				7E4FD39822101D4500C1A5C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
