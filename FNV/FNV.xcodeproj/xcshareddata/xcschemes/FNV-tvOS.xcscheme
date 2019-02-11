@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7E4FD38F22101D4500C1A5C5"
+               BlueprintIdentifier = "7E31726522114789004B84DF"
                BuildableName = "FNV.framework"
                BlueprintName = "FNV-tvOS"
                ReferencedContainer = "container:FNV.xcodeproj">
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7E31724522114394004B84DF"
+               BuildableName = "FNVTests-tvOS.xctest"
+               BlueprintName = "FNVTests-tvOS"
+               ReferencedContainer = "container:FNV.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7E31726522114789004B84DF"
+            BuildableName = "FNV.framework"
+            BlueprintName = "FNV-tvOS"
+            ReferencedContainer = "container:FNV.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -45,7 +64,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7E4FD38F22101D4500C1A5C5"
+            BlueprintIdentifier = "7E31726522114789004B84DF"
             BuildableName = "FNV.framework"
             BlueprintName = "FNV-tvOS"
             ReferencedContainer = "container:FNV.xcodeproj">
@@ -63,7 +82,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7E4FD38F22101D4500C1A5C5"
+            BlueprintIdentifier = "7E31726522114789004B84DF"
             BuildableName = "FNV.framework"
             BlueprintName = "FNV-tvOS"
             ReferencedContainer = "container:FNV.xcodeproj">
