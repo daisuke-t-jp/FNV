@@ -15,6 +15,9 @@
 		029D31732207CCB9009FA98A /* FNVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D31722207CCB9009FA98A /* FNVTests.swift */; };
 		029D31752207CCB9009FA98A /* FNV.h in Headers */ = {isa = PBXBuildFile; fileRef = 029D31672207CCB9009FA98A /* FNV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		029D317F2207CCD0009FA98A /* FNV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D317E2207CCD0009FA98A /* FNV.swift */; };
+		02CBB3B4221A77F5000BCF7E /* FNVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D31722207CCB9009FA98A /* FNVTests.swift */; };
+		02CBB3B7221A787E000BCF7E /* FNV.h in Headers */ = {isa = PBXBuildFile; fileRef = 029D31672207CCB9009FA98A /* FNV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02CBB3B8221A788C000BCF7E /* FNV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D317E2207CCD0009FA98A /* FNV.swift */; };
 		7E31726E221147DE004B84DF /* FNV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E31726622114789004B84DF /* FNV.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +35,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 029D31632207CCB9009FA98A;
 			remoteInfo = FNV;
+		};
+		02CBB3B5221A7823000BCF7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 029D315B2207CCB9009FA98A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E31726522114789004B84DF;
+			remoteInfo = "FNV-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -170,6 +180,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CBB3B7221A787E000BCF7E /* FNV.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +270,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				02CBB3B6221A7823000BCF7E /* PBXTargetDependency */,
 			);
 			name = "FNVTests-tvOS";
 			productName = "FNVTests-tvOS";
@@ -412,6 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CBB3B4221A77F5000BCF7E /* FNVTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CBB3B8221A788C000BCF7E /* FNV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +448,11 @@
 			isa = PBXTargetDependency;
 			target = 029D31632207CCB9009FA98A /* FNV-iOS */;
 			targetProxy = 029D316F2207CCB9009FA98A /* PBXContainerItemProxy */;
+		};
+		02CBB3B6221A7823000BCF7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E31726522114789004B84DF /* FNV-tvOS */;
+			targetProxy = 02CBB3B5221A7823000BCF7E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -781,6 +800,7 @@
 		7E31724F22114394004B84DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FNVTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -801,6 +821,7 @@
 		7E31725022114394004B84DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FNVTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
