@@ -2,13 +2,14 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.name         = "FNV"
-  spec.version      = "1.0.5"
+  spec.version      = "1.0.6"
   spec.summary      = "FNV hash framework in Swift."
 
   spec.description  = <<-DESC
                    This is "FNV" (Fowler/Noll/Vo) hash framework in Swift.
-
                    Framework include "FNV-0 32/64bit", "FNV-1 32/64bit", "FNV-1a 32/64bit" functions.
+
+                   Original FNV algorithm created by Glenn Fowler, Landon Curt Noll, and Kiem-Phong Vo.  
                    DESC
 
   spec.homepage     = "https://github.com/daisuke-t-jp/FNV"
