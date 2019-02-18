@@ -52,27 +52,39 @@ public extension FNV {
 // MARK: - FNV-0
 public extension FNV {
 	
+	/// Generate FNV-0 32bit hash.
+	///
+	/// - Parameter array: Source data for hashing.
+	/// - Returns: A generated hash.
 	static public func fnv0_32(_ array: [UInt8]) -> UInt32 {
 		return fnv1(array, offsetBasis: 0, prime: prime32)
 	}
 	
+	/// Overload func for "fnv0_32(_ array: [UInt8])".
 	static public func fnv0_32(_ string: String) -> UInt32 {
 		return fnv1(Array(string.utf8), offsetBasis: 0, prime: prime32)
 	}
 	
+	/// Overload func for "fnv0_32(_ array: [UInt8])".
 	static public func fnv0_32(_ data: Data) -> UInt32 {
 		return fnv1([UInt8](data), offsetBasis: 0, prime: prime32)
 	}
 	
 	
+	/// Generate FNV-0 64bit hash.
+	///
+	/// - Parameter array: Source data for hashing.
+	/// - Returns: A generated hash.
 	static public func fnv0_64(_ array: [UInt8]) -> UInt64 {
 		return fnv1(array, offsetBasis: 0, prime: prime64)
 	}
 	
+	/// Overload func for "fnv0_64(_ array: [UInt8])".
 	static public func fnv0_64(_ string: String) -> UInt64 {
 		return fnv1(Array(string.utf8), offsetBasis: 0, prime: prime64)
 	}
 	
+	/// Overload func for "fnv0_64(_ array: [UInt8])".
 	static public func fnv0_64(_ data: Data) -> UInt64 {
 		return fnv1([UInt8](data), offsetBasis: 0, prime: prime64)
 	}
@@ -83,60 +95,83 @@ public extension FNV {
 
 // MARK: - FNV-1
 public extension FNV {
-
+	
+	/// Generate FNV-1 32bit hash.
+	///
+	/// - Parameter array: Source data for hashing.
+	/// - Returns: A generated hash.
 	static public func fnv1_32(_ array: [UInt8]) -> UInt32 {
 		return fnv1(array, offsetBasis: offsetBasis32, prime: prime32)
 	}
 	
+	/// Overload func for "fnv1_32(_ array: [UInt8])".
 	static public func fnv1_32(_ string: String) -> UInt32 {
 		return fnv1(Array(string.utf8), offsetBasis: offsetBasis32, prime: prime32)
 	}
 	
+	/// Overload func for "fnv1_32(_ array: [UInt8])".
 	static public func fnv1_32(_ data: Data) -> UInt32 {
 		return fnv1([UInt8](data), offsetBasis: offsetBasis32, prime: prime32)
 	}
 	
-	
+	/// Generate FNV-1 64bit hash.
+	///
+	/// - Parameter array: Source data for hashing.
+	/// - Returns: A generated hash.
 	static public func fnv1_64(_ array: [UInt8]) -> UInt64 {
 		return fnv1(array, offsetBasis: offsetBasis64, prime: prime64)
 	}
 	
+	/// Overload func for "fnv1_64(_ array: [UInt8])".
 	static public func fnv1_64(_ string: String) -> UInt64 {
 		return fnv1(Array(string.utf8), offsetBasis: offsetBasis64, prime: prime64)
 	}
 	
+	/// Overload func for "fnv1_64(_ array: [UInt8])".
 	static public func fnv1_64(_ data: Data) -> UInt64 {
 		return fnv1([UInt8](data), offsetBasis: offsetBasis64, prime: prime64)
 	}
 
 }
-	
+
 
 
 // MARK: - FNV-1a
 public extension FNV {
-
+	
+	/// Generate FNV-1a 32bit hash.
+	///
+	/// - Parameter array: Source data for hashing.
+	/// - Returns: A generated hash.
 	static public func fnv1a_32(_ string: String) -> UInt32 {
 		return fnv1a(Array(string.utf8), offsetBasis: offsetBasis32, prime: prime32)
 	}
 	
+	/// Overload func for "fnv1a_32(_ array: [UInt8])".
 	static public func fnv1a_32(_ array: [UInt8]) -> UInt32 {
 		return fnv1a(array, offsetBasis: offsetBasis32, prime: prime32)
 	}
 	
+	/// Overload func for "fnv1a_32(_ array: [UInt8])".
 	static public func fnv1a_32(_ data: Data) -> UInt32 {
 		return fnv1a([UInt8](data), offsetBasis: offsetBasis32, prime: prime32)
 	}
 	
 	
+	/// Generate FNV-1a 64bit hash.
+	///
+	/// - Parameter array: Source data for hashing.
+	/// - Returns: A generated hash.
 	static public func fnv1a_64(_ string: String) -> UInt64 {
 		return fnv1a(Array(string.utf8), offsetBasis: offsetBasis64, prime: prime64)
 	}
 	
+	/// Overload func for "fnv1a_64(_ array: [UInt8])".
 	static public func fnv1a_64(_ array: [UInt8]) -> UInt64 {
 		return fnv1a(array, offsetBasis: offsetBasis64, prime: prime64)
 	}
 	
+	/// Overload func for "fnv1a_64(_ array: [UInt8])".
 	static public func fnv1a_64(_ data: Data) -> UInt64 {
 		return fnv1a([UInt8](data), offsetBasis: offsetBasis64, prime: prime64)
 	}
