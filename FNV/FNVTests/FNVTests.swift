@@ -10,21 +10,21 @@ import XCTest
 @testable import FNV
 
 class FNVTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+	
+	override func setUp() {
+		// Put setup code here. This method is called before the invocation of each test method in the class.
+	}
+	
+	override func tearDown() {
+		// Put teardown code here. This method is called after the invocation of each test method in the class.
+	}
 	
 	
 	// MARK: - FNV-0
 	func testFNV0_Overload() {
 		XCTAssertEqual(FNV.fnv0_32("Hello World!"), FNV.fnv0_32(Array("Hello World!".utf8)))
 		XCTAssertEqual(FNV.fnv0_32("Hello World!"), FNV.fnv0_32("Hello World!".data(using: .utf8)!))
-
+		
 		XCTAssertEqual(FNV.fnv0_64("Hello World!"), FNV.fnv0_64(Array("Hello World!".utf8)))
 		XCTAssertEqual(FNV.fnv0_64("Hello World!"), FNV.fnv0_64("Hello World!".data(using: .utf8)!))
 	}
@@ -38,7 +38,7 @@ class FNVTests: XCTestCase {
 		XCTAssertEqual(FNV.fnv0_32("https://example.com/"), 0x8ecd080f)
 		XCTAssertEqual(FNV.fnv0_32("ことえり"), 0x6c94da22)
 	}
-
+	
 	func testFNV0_64() {
 		XCTAssertEqual(FNV.fnv0_64("Hello World!"), 0xdd8b4a711cd6199d)
 		XCTAssertEqual(FNV.fnv0_64("0123456789"), 0xea65d9a60e6e2be1)

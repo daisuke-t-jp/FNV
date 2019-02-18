@@ -9,7 +9,7 @@
 import Foundation
 
 public class FNV {
-
+	
 	// MARK: - Enum, Const
 	static private let offsetBasis32: UInt32 = 2166136261
 	static private let offsetBasis64: UInt64 = 14695981039346656037
@@ -22,7 +22,7 @@ public class FNV {
 
 // MARK: - Algorithm
 public extension FNV {
-
+	
 	static private func fnv1<T: FixedWidthInteger>(_ array: [UInt8], offsetBasis: T, prime: T) -> T {
 		var hash: T = offsetBasis
 		
@@ -44,9 +44,9 @@ public extension FNV {
 		
 		return hash
 	}
-
-}
 	
+}
+
 
 
 // MARK: - FNV-0
@@ -90,7 +90,7 @@ public extension FNV {
 	}
 	
 }
-	
+
 
 
 // MARK: - FNV-1
@@ -131,7 +131,7 @@ public extension FNV {
 	static public func fnv1_64(_ data: Data) -> UInt64 {
 		return fnv1([UInt8](data), offsetBasis: offsetBasis64, prime: prime64)
 	}
-
+	
 }
 
 
@@ -175,6 +175,6 @@ public extension FNV {
 	static public func fnv1a_64(_ data: Data) -> UInt64 {
 		return fnv1a([UInt8](data), offsetBasis: offsetBasis64, prime: prime64)
 	}
-
+	
 }
 
