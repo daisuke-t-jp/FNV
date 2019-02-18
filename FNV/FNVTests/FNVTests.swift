@@ -20,8 +20,9 @@ class FNVTests: XCTestCase {
 	}
 	
 	
+	
 	// MARK: - FNV-0
-	func testFNV0_Overload() {
+	func testFNV0_overload() {
 		XCTAssertEqual(FNV.fnv0_32("Hello World!"), FNV.fnv0_32(Array("Hello World!".utf8)))
 		XCTAssertEqual(FNV.fnv0_32("Hello World!"), FNV.fnv0_32("Hello World!".data(using: .utf8)!))
 		
@@ -39,6 +40,15 @@ class FNVTests: XCTestCase {
 		XCTAssertEqual(FNV.fnv0_32("ことえり"), 0x6c94da22)
 	}
 	
+	func testFNV0_32_file() {
+		let bundle = Bundle(for: type(of: self))
+		let path = bundle.path(forResource: "alice29", ofType: "txt")!
+		let data = NSData(contentsOfFile: path)! as Data
+		
+		XCTAssertEqual(FNV.fnv0_32(data), 0x91dbdaab)
+	}
+	
+	
 	func testFNV0_64() {
 		XCTAssertEqual(FNV.fnv0_64("Hello World!"), 0xdd8b4a711cd6199d)
 		XCTAssertEqual(FNV.fnv0_64("0123456789"), 0xea65d9a60e6e2be1)
@@ -49,9 +59,18 @@ class FNVTests: XCTestCase {
 		XCTAssertEqual(FNV.fnv0_64("ことえり"), 0x82a79a10eae2aca2)
 	}
 	
+	func testFNV0_64_file() {
+		let bundle = Bundle(for: type(of: self))
+		let path = bundle.path(forResource: "alice29", ofType: "txt")!
+		let data = NSData(contentsOfFile: path)! as Data
+		
+		XCTAssertEqual(FNV.fnv0_64(data), 0x37acb9c58d40f10b)
+	}
+	
+	
 	
 	// MARK: - FNV-1
-	func testFNV1_Overload() {
+	func testFNV1_overload() {
 		XCTAssertEqual(FNV.fnv1_32("Hello World!"), FNV.fnv1_32(Array("Hello World!".utf8)))
 		XCTAssertEqual(FNV.fnv1_32("Hello World!"), FNV.fnv1_32("Hello World!".data(using: .utf8)!))
 		
@@ -69,6 +88,15 @@ class FNVTests: XCTestCase {
 		XCTAssertEqual(FNV.fnv1_32("ことえり"), 0x4cb8994f)
 	}
 	
+	func testFNV1_32_file() {
+		let bundle = Bundle(for: type(of: self))
+		let path = bundle.path(forResource: "alice29", ofType: "txt")!
+		let data = NSData(contentsOfFile: path)! as Data
+		
+		XCTAssertEqual(FNV.fnv1_32(data), 0x8dffd700)
+	}
+	
+	
 	func testFNV1_64() {
 		XCTAssertEqual(FNV.fnv1_64("Hello World!"), 0x8e59dd02f68c387c)
 		XCTAssertEqual(FNV.fnv1_64("0123456789"), 0xc3f080735df30b0c)
@@ -79,9 +107,18 @@ class FNVTests: XCTestCase {
 		XCTAssertEqual(FNV.fnv1_64("ことえり"), 0xe7ab1f2ffd06f5ef)
 	}
 	
+	func testFNV1_64_file() {
+		let bundle = Bundle(for: type(of: self))
+		let path = bundle.path(forResource: "alice29", ofType: "txt")!
+		let data = NSData(contentsOfFile: path)! as Data
+		
+		XCTAssertEqual(FNV.fnv1_64(data), 0x87a1f8da448c5f20)
+	}
+	
+	
 	
 	// MARK: - FNV-1a
-	func testFNV1a_Overload() {
+	func testFNV1a_overload() {
 		XCTAssertEqual(FNV.fnv1a_32("Hello World!"), FNV.fnv1a_32(Array("Hello World!".utf8)))
 		XCTAssertEqual(FNV.fnv1a_32("Hello World!"), FNV.fnv1a_32("Hello World!".data(using: .utf8)!))
 		
@@ -99,6 +136,15 @@ class FNVTests: XCTestCase {
 		XCTAssertEqual(FNV.fnv1a_32("ことえり"), 0xb0ecd77f)
 	}
 	
+	func testFNV1a_32_file() {
+		let bundle = Bundle(for: type(of: self))
+		let path = bundle.path(forResource: "alice29", ofType: "txt")!
+		let data = NSData(contentsOfFile: path)! as Data
+		
+		XCTAssertEqual(FNV.fnv1a_32(data), 0xdd55ad0a)
+	}
+	
+	
 	func testFNV1a_64() {
 		XCTAssertEqual(FNV.fnv1a_64("Hello World!"), 0x8c0ec8d1fb9e6e32)
 		XCTAssertEqual(FNV.fnv1a_64("0123456789"), 0x50c0aafd8b4330b2)
@@ -107,6 +153,14 @@ class FNVTests: XCTestCase {
 		XCTAssertEqual(FNV.fnv1a_64("127.0.0.1"), 0xaabafe7104d914be)
 		XCTAssertEqual(FNV.fnv1a_64("https://example.com/"), 0x0c8b41cfdcb3c914)
 		XCTAssertEqual(FNV.fnv1a_64("ことえり"), 0x8f37c53be7b7631f)
+	}
+	
+	func testFNV1a_64_file() {
+		let bundle = Bundle(for: type(of: self))
+		let path = bundle.path(forResource: "alice29", ofType: "txt")!
+		let data = NSData(contentsOfFile: path)! as Data
+		
+		XCTAssertEqual(FNV.fnv1a_64(data), 0x345ebb394e2e3b0a)
 	}
 	
 }
