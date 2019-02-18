@@ -18,6 +18,9 @@
 		02CBB3B4221A77F5000BCF7E /* FNVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D31722207CCB9009FA98A /* FNVTests.swift */; };
 		02CBB3B7221A787E000BCF7E /* FNV.h in Headers */ = {isa = PBXBuildFile; fileRef = 029D31672207CCB9009FA98A /* FNV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02CBB3B8221A788C000BCF7E /* FNV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D317E2207CCD0009FA98A /* FNV.swift */; };
+		02CBB3BA221A79B0000BCF7E /* alice29.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02CBB3B9221A79B0000BCF7E /* alice29.txt */; };
+		02CBB3BB221A79B0000BCF7E /* alice29.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02CBB3B9221A79B0000BCF7E /* alice29.txt */; };
+		02CBB3BC221A79B0000BCF7E /* alice29.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02CBB3B9221A79B0000BCF7E /* alice29.txt */; };
 		7E31726E221147DE004B84DF /* FNV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E31726622114789004B84DF /* FNV.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,7 @@
 		029D31722207CCB9009FA98A /* FNVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNVTests.swift; sourceTree = "<group>"; };
 		029D31742207CCB9009FA98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		029D317E2207CCD0009FA98A /* FNV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNV.swift; sourceTree = "<group>"; };
+		02CBB3B9221A79B0000BCF7E /* alice29.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = alice29.txt; sourceTree = "<group>"; };
 		7E31724622114394004B84DF /* FNVTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FNVTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E31726622114789004B84DF /* FNV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FNV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -153,6 +157,7 @@
 			children = (
 				029D31722207CCB9009FA98A /* FNVTests.swift */,
 				029D31742207CCB9009FA98A /* Info.plist */,
+				02CBB3B9221A79B0000BCF7E /* alice29.txt */,
 			);
 			path = FNVTests;
 			sourceTree = "<group>";
@@ -354,6 +359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CBB3BB221A79B0000BCF7E /* alice29.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CBB3BA221A79B0000BCF7E /* alice29.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CBB3BC221A79B0000BCF7E /* alice29.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
