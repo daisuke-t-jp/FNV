@@ -102,6 +102,7 @@
 				021D66A92208283200D88FC1 /* Sources */,
 				021D66AA2208283200D88FC1 /* Frameworks */,
 				021D66AB2208283200D88FC1 /* Resources */,
+				B8FC1154B064E7A64E0F0974 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +161,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		B8FC1154B064E7A64E0F0974 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FNVDemoiOS/Pods-FNVDemoiOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FNV/FNV.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FNV.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FNVDemoiOS/Pods-FNVDemoiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BA83BBD0AA108E9C7E7C5EC4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
