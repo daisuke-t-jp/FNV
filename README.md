@@ -7,10 +7,10 @@
 [![Build Status](https://travis-ci.org/daisuke-t-jp/FNV.svg?branch=master)](https://travis-ci.org/daisuke-t-jp/FNV)
 
 
-# What is this?
+# Introduction
 
 **FNV** (Fowler/Noll/Vo) hash framework in Swift.  
-Framework include *FNV-0 32/64bit*, *FNV-1 32/64bit*, *FNV-1a 32/64bit* functions.  
+Framework include FNV-0(32/64bit), FNV-1(32/64bit), FNV-1a(32/64bit) functions.  
   
 Original FNV algorithm created by Glenn Fowler, Landon Curt Noll, and Kiem-Phong Vo.  
   
@@ -19,10 +19,10 @@ Reference :
 
 
 # Install
-### Carthage
+## Carthage
 `github "daisuke-t-jp/FNV"`
 
-### CocoaPods
+## CocoaPods
 ```
 use_frameworks!
 
@@ -33,12 +33,13 @@ end
 
 
 # Usage
+## Import framework
 ``` swift
 import FNV
+```
 
-
-
-// MARK: - FNV-0
+## FNV-0
+``` swift
 /**
  * 32bit hash
  */
@@ -63,10 +64,10 @@ let hash = FNV.fnv0_64("string")
 
 // Generate from Data.
 let hash = FNV.fnv0_64("string".data(using: .utf8)!)
+```
 
-
-
-// MARK: - FNV-1
+## FNV-1
+``` swift
 /**
  * 32bit hash
  */
@@ -91,10 +92,10 @@ let hash = FNV.fnv1_64("string")
 
 // Generate from Data.
 let hash = FNV.fnv1_64("string".data(using: .utf8)!)
-                
+```
 
-
-// MARK: - FNV-1a
+## FNV-1a
+``` swift
 /**
  * 32bit hash
  */
@@ -119,5 +120,4 @@ let hash = FNV.fnv1a_64("string")
 
 // Generate from Data.
 let hash = FNV.fnv1a_64("string".data(using: .utf8)!)
-
 ```
