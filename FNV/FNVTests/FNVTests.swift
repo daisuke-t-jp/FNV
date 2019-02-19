@@ -11,6 +11,20 @@ import XCTest
 
 class FNVTests: XCTestCase {
 	
+	// MARK: - Property
+	static var allTests = [
+		("testFNV0_overload", testFNV0_overload),
+		("testFNV0_32", testFNV0_32),
+		("testFNV0_64", testFNV0_64),
+		("testFNV1_overload", testFNV1_overload),
+		("testFNV1_32", testFNV1_32),
+		("testFNV1_64", testFNV1_64),
+		("testFNV1a_overload", testFNV1a_overload),
+		("testFNV1a_32", testFNV1a_32),
+		("testFNV1a_64", testFNV1a_64),
+		]
+	
+
 	override func setUp() {
 		// Put setup code here. This method is called before the invocation of each test method in the class.
 	}
@@ -18,7 +32,6 @@ class FNVTests: XCTestCase {
 	override func tearDown() {
 		// Put teardown code here. This method is called after the invocation of each test method in the class.
 	}
-	
 	
 	
 	// MARK: - FNV-0
