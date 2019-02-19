@@ -55,7 +55,10 @@ class FNVTests: XCTestCase {
 	
 	func testFNV0_32_file() {
 		let bundle = Bundle(for: type(of: self))
-		let path = bundle.path(forResource: "alice29", ofType: "txt")!
+		guard let path = bundle.path(forResource: "alice29", ofType: "txt") else {
+			print("skip file test. reason : failed open file.")
+			return
+		}
 		let data = NSData(contentsOfFile: path)! as Data
 		
 		XCTAssertEqual(FNV.fnv0_32(data), 0x91dbdaab)
@@ -74,7 +77,10 @@ class FNVTests: XCTestCase {
 	
 	func testFNV0_64_file() {
 		let bundle = Bundle(for: type(of: self))
-		let path = bundle.path(forResource: "alice29", ofType: "txt")!
+		guard let path = bundle.path(forResource: "alice29", ofType: "txt") else {
+			print("skip file test. reason : failed open file.")
+			return
+		}
 		let data = NSData(contentsOfFile: path)! as Data
 		
 		XCTAssertEqual(FNV.fnv0_64(data), 0x37acb9c58d40f10b)
@@ -103,7 +109,10 @@ class FNVTests: XCTestCase {
 	
 	func testFNV1_32_file() {
 		let bundle = Bundle(for: type(of: self))
-		let path = bundle.path(forResource: "alice29", ofType: "txt")!
+		guard let path = bundle.path(forResource: "alice29", ofType: "txt") else {
+			print("skip file test. reason : failed open file.")
+			return
+		}
 		let data = NSData(contentsOfFile: path)! as Data
 		
 		XCTAssertEqual(FNV.fnv1_32(data), 0x8dffd700)
@@ -122,7 +131,10 @@ class FNVTests: XCTestCase {
 	
 	func testFNV1_64_file() {
 		let bundle = Bundle(for: type(of: self))
-		let path = bundle.path(forResource: "alice29", ofType: "txt")!
+		guard let path = bundle.path(forResource: "alice29", ofType: "txt") else {
+			print("skip file test. reason : failed open file.")
+			return
+		}
 		let data = NSData(contentsOfFile: path)! as Data
 		
 		XCTAssertEqual(FNV.fnv1_64(data), 0x87a1f8da448c5f20)
@@ -151,7 +163,10 @@ class FNVTests: XCTestCase {
 	
 	func testFNV1a_32_file() {
 		let bundle = Bundle(for: type(of: self))
-		let path = bundle.path(forResource: "alice29", ofType: "txt")!
+		guard let path = bundle.path(forResource: "alice29", ofType: "txt") else {
+			print("skip file test. reason : failed open file.")
+			return
+		}
 		let data = NSData(contentsOfFile: path)! as Data
 		
 		XCTAssertEqual(FNV.fnv1a_32(data), 0xdd55ad0a)
@@ -170,7 +185,10 @@ class FNVTests: XCTestCase {
 	
 	func testFNV1a_64_file() {
 		let bundle = Bundle(for: type(of: self))
-		let path = bundle.path(forResource: "alice29", ofType: "txt")!
+		guard let path = bundle.path(forResource: "alice29", ofType: "txt") else {
+			print("skip file test. reason : failed open file.")
+			return
+		}
 		let data = NSData(contentsOfFile: path)! as Data
 		
 		XCTAssertEqual(FNV.fnv1a_64(data), 0x345ebb394e2e3b0a)
