@@ -35,7 +35,7 @@ Pod::Spec.new do |spec|
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.source_files  = "FNV/FNV/*.{h,swift}"
+  spec.source_files  = "Sources/FNV/*.{swift}"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
