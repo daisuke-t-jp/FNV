@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		021D668D220816C300D88FC1 /* FNV.h in Headers */ = {isa = PBXBuildFile; fileRef = 029D31672207CCB9009FA98A /* FNV.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		021D668F220816C300D88FC1 /* FNV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D317E2207CCD0009FA98A /* FNV.swift */; };
-		021D669B2208195300D88FC1 /* FNVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D31722207CCB9009FA98A /* FNVTests.swift */; };
+		026E341C221BA3FA008A8531 /* FNV.h in Headers */ = {isa = PBXBuildFile; fileRef = 026E3419221BA3FA008A8531 /* FNV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		026E341D221BA3FA008A8531 /* FNV.h in Headers */ = {isa = PBXBuildFile; fileRef = 026E3419221BA3FA008A8531 /* FNV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		026E341E221BA3FA008A8531 /* FNV.h in Headers */ = {isa = PBXBuildFile; fileRef = 026E3419221BA3FA008A8531 /* FNV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		026E341F221BA3FA008A8531 /* FNV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E341A221BA3FA008A8531 /* FNV.swift */; };
+		026E3420221BA3FA008A8531 /* FNV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E341A221BA3FA008A8531 /* FNV.swift */; };
+		026E3421221BA3FA008A8531 /* FNV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E341A221BA3FA008A8531 /* FNV.swift */; };
+		026E3428221BA40F008A8531 /* alice29.txt in Resources */ = {isa = PBXBuildFile; fileRef = 026E3425221BA40F008A8531 /* alice29.txt */; };
+		026E3429221BA40F008A8531 /* alice29.txt in Resources */ = {isa = PBXBuildFile; fileRef = 026E3425221BA40F008A8531 /* alice29.txt */; };
+		026E342A221BA40F008A8531 /* alice29.txt in Resources */ = {isa = PBXBuildFile; fileRef = 026E3425221BA40F008A8531 /* alice29.txt */; };
+		026E342B221BA40F008A8531 /* FNVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E3426221BA40F008A8531 /* FNVTests.swift */; };
+		026E342C221BA40F008A8531 /* FNVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E3426221BA40F008A8531 /* FNVTests.swift */; };
+		026E342D221BA40F008A8531 /* FNVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E3426221BA40F008A8531 /* FNVTests.swift */; };
 		0290FBD7220C0AB20076E82F /* FNV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021D6695220816C300D88FC1 /* FNV.framework */; };
 		029D316E2207CCB9009FA98A /* FNV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029D31642207CCB9009FA98A /* FNV.framework */; };
-		029D31732207CCB9009FA98A /* FNVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D31722207CCB9009FA98A /* FNVTests.swift */; };
-		029D31752207CCB9009FA98A /* FNV.h in Headers */ = {isa = PBXBuildFile; fileRef = 029D31672207CCB9009FA98A /* FNV.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		029D317F2207CCD0009FA98A /* FNV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D317E2207CCD0009FA98A /* FNV.swift */; };
-		02CBB3B4221A77F5000BCF7E /* FNVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D31722207CCB9009FA98A /* FNVTests.swift */; };
-		02CBB3B7221A787E000BCF7E /* FNV.h in Headers */ = {isa = PBXBuildFile; fileRef = 029D31672207CCB9009FA98A /* FNV.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		02CBB3B8221A788C000BCF7E /* FNV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D317E2207CCD0009FA98A /* FNV.swift */; };
-		02CBB3BA221A79B0000BCF7E /* alice29.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02CBB3B9221A79B0000BCF7E /* alice29.txt */; };
-		02CBB3BB221A79B0000BCF7E /* alice29.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02CBB3B9221A79B0000BCF7E /* alice29.txt */; };
-		02CBB3BC221A79B0000BCF7E /* alice29.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02CBB3B9221A79B0000BCF7E /* alice29.txt */; };
 		7E31726E221147DE004B84DF /* FNV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E31726622114789004B84DF /* FNV.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,14 +51,14 @@
 /* Begin PBXFileReference section */
 		021D6695220816C300D88FC1 /* FNV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FNV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		021D66A22208195300D88FC1 /* FNVTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FNVTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		026E3419221BA3FA008A8531 /* FNV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FNV.h; path = Sources/FNV/FNV.h; sourceTree = SOURCE_ROOT; };
+		026E341A221BA3FA008A8531 /* FNV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FNV.swift; path = Sources/FNV/FNV.swift; sourceTree = SOURCE_ROOT; };
+		026E341B221BA3FA008A8531 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/FNV/Info.plist; sourceTree = SOURCE_ROOT; };
+		026E3425221BA40F008A8531 /* alice29.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = alice29.txt; path = Tests/FNVTests/alice29.txt; sourceTree = SOURCE_ROOT; };
+		026E3426221BA40F008A8531 /* FNVTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FNVTests.swift; path = Tests/FNVTests/FNVTests.swift; sourceTree = SOURCE_ROOT; };
+		026E3427221BA40F008A8531 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/FNVTests/Info.plist; sourceTree = SOURCE_ROOT; };
 		029D31642207CCB9009FA98A /* FNV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FNV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		029D31672207CCB9009FA98A /* FNV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNV.h; sourceTree = "<group>"; };
-		029D31682207CCB9009FA98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		029D316D2207CCB9009FA98A /* FNVTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FNVTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		029D31722207CCB9009FA98A /* FNVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNVTests.swift; sourceTree = "<group>"; };
-		029D31742207CCB9009FA98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		029D317E2207CCD0009FA98A /* FNV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNV.swift; sourceTree = "<group>"; };
-		02CBB3B9221A79B0000BCF7E /* alice29.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = alice29.txt; sourceTree = "<group>"; };
 		7E31724622114394004B84DF /* FNVTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FNVTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E31726622114789004B84DF /* FNV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FNV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,9 +145,9 @@
 		029D31662207CCB9009FA98A /* FNV */ = {
 			isa = PBXGroup;
 			children = (
-				029D31682207CCB9009FA98A /* Info.plist */,
-				029D31672207CCB9009FA98A /* FNV.h */,
-				029D317E2207CCD0009FA98A /* FNV.swift */,
+				026E3419221BA3FA008A8531 /* FNV.h */,
+				026E341A221BA3FA008A8531 /* FNV.swift */,
+				026E341B221BA3FA008A8531 /* Info.plist */,
 			);
 			path = FNV;
 			sourceTree = "<group>";
@@ -155,9 +155,9 @@
 		029D31712207CCB9009FA98A /* FNVTests */ = {
 			isa = PBXGroup;
 			children = (
-				029D31722207CCB9009FA98A /* FNVTests.swift */,
-				029D31742207CCB9009FA98A /* Info.plist */,
-				02CBB3B9221A79B0000BCF7E /* alice29.txt */,
+				026E3426221BA40F008A8531 /* FNVTests.swift */,
+				026E3425221BA40F008A8531 /* alice29.txt */,
+				026E3427221BA40F008A8531 /* Info.plist */,
 			);
 			path = FNVTests;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				021D668D220816C300D88FC1 /* FNV.h in Headers */,
+				026E341D221BA3FA008A8531 /* FNV.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +177,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				029D31752207CCB9009FA98A /* FNV.h in Headers */,
+				026E341C221BA3FA008A8531 /* FNV.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +185,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02CBB3B7221A787E000BCF7E /* FNV.h in Headers */,
+				026E341E221BA3FA008A8531 /* FNV.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,18 +310,27 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = FNV;
 				TargetAttributes = {
+					021D668B220816C300D88FC1 = {
+						LastSwiftMigration = 1010;
+					};
+					021D66972208195300D88FC1 = {
+						LastSwiftMigration = 1010;
+					};
 					029D31632207CCB9009FA98A = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
 					};
 					029D316C2207CCB9009FA98A = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					7E31724522114394004B84DF = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					7E31726522114789004B84DF = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -359,7 +368,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02CBB3BB221A79B0000BCF7E /* alice29.txt in Resources */,
+				026E3429221BA40F008A8531 /* alice29.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02CBB3BA221A79B0000BCF7E /* alice29.txt in Resources */,
+				026E3428221BA40F008A8531 /* alice29.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02CBB3BC221A79B0000BCF7E /* alice29.txt in Resources */,
+				026E342A221BA40F008A8531 /* alice29.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				021D668F220816C300D88FC1 /* FNV.swift in Sources */,
+				026E3420221BA3FA008A8531 /* FNV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				021D669B2208195300D88FC1 /* FNVTests.swift in Sources */,
+				026E342C221BA40F008A8531 /* FNVTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				029D317F2207CCD0009FA98A /* FNV.swift in Sources */,
+				026E341F221BA3FA008A8531 /* FNV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				029D31732207CCB9009FA98A /* FNVTests.swift in Sources */,
+				026E342B221BA40F008A8531 /* FNVTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02CBB3B4221A77F5000BCF7E /* FNVTests.swift in Sources */,
+				026E342D221BA40F008A8531 /* FNVTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02CBB3B8221A788C000BCF7E /* FNV.swift in Sources */,
+				026E3421221BA3FA008A8531 /* FNV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +485,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FNV/Info.plist;
+				INFOPLIST_FILE = Sources/FNV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -507,7 +516,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FNV/Info.plist;
+				INFOPLIST_FILE = Sources/FNV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -530,10 +539,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = FNVTests/Info.plist;
+				INFOPLIST_FILE = Tests/FNVTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -544,6 +554,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -553,10 +564,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = FNVTests/Info.plist;
+				INFOPLIST_FILE = Tests/FNVTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -709,7 +721,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FNV/Info.plist;
+				INFOPLIST_FILE = Sources/FNV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -740,7 +752,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FNV/Info.plist;
+				INFOPLIST_FILE = Sources/FNV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -763,10 +775,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = FNVTests/Info.plist;
+				INFOPLIST_FILE = Tests/FNVTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -777,6 +790,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -786,10 +800,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = FNVTests/Info.plist;
+				INFOPLIST_FILE = Tests/FNVTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -809,8 +824,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FNVTests/Info.plist;
+				INFOPLIST_FILE = Tests/FNVTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -820,6 +836,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
@@ -830,8 +847,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FNVTests/Info.plist;
+				INFOPLIST_FILE = Tests/FNVTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -850,13 +868,14 @@
 		7E31726C22114789004B84DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FNV/Info.plist;
+				INFOPLIST_FILE = Sources/FNV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -868,6 +887,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
@@ -877,13 +897,14 @@
 		7E31726D22114789004B84DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FNV/Info.plist;
+				INFOPLIST_FILE = Sources/FNV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
