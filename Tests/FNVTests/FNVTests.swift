@@ -54,14 +54,15 @@ class FNVTests: XCTestCase {
 	}
 	
 	func testFNV0_32_file() {
+		#if SWIFT_PACKAGE
+		print("\(self.description)SwiftPM-Building skipped UnitTest that used resources.")
+		#else
 		let bundle = Bundle(for: type(of: self))
-		guard let path = bundle.path(forResource: "alice29", ofType: "txt") else {
-			print("skip file test. reason : failed open file.")
-			return
-		}
+		let path = bundle.path(forResource: "alice29", ofType: "txt")!
 		let data = NSData(contentsOfFile: path)! as Data
 		
 		XCTAssertEqual(FNV.fnv0_32(data), 0x91dbdaab)
+		#endif
 	}
 	
 	
@@ -76,14 +77,15 @@ class FNVTests: XCTestCase {
 	}
 	
 	func testFNV0_64_file() {
+		#if SWIFT_PACKAGE
+		print("\(self.description)SwiftPM-Building skipped UnitTest that used resources.")
+		#else
 		let bundle = Bundle(for: type(of: self))
-		guard let path = bundle.path(forResource: "alice29", ofType: "txt") else {
-			print("skip file test. reason : failed open file.")
-			return
-		}
+		let path = bundle.path(forResource: "alice29", ofType: "txt")!
 		let data = NSData(contentsOfFile: path)! as Data
 		
 		XCTAssertEqual(FNV.fnv0_64(data), 0x37acb9c58d40f10b)
+		#endif
 	}
 	
 	
@@ -108,14 +110,15 @@ class FNVTests: XCTestCase {
 	}
 	
 	func testFNV1_32_file() {
+		#if SWIFT_PACKAGE
+		print("\(self.description)SwiftPM-Building skipped UnitTest that used resources.")
+		#else
 		let bundle = Bundle(for: type(of: self))
-		guard let path = bundle.path(forResource: "alice29", ofType: "txt") else {
-			print("skip file test. reason : failed open file.")
-			return
-		}
+		let path = bundle.path(forResource: "alice29", ofType: "txt")!
 		let data = NSData(contentsOfFile: path)! as Data
 		
 		XCTAssertEqual(FNV.fnv1_32(data), 0x8dffd700)
+		#endif
 	}
 	
 	
@@ -130,14 +133,15 @@ class FNVTests: XCTestCase {
 	}
 	
 	func testFNV1_64_file() {
+		#if SWIFT_PACKAGE
+		print("\(self.description)SwiftPM-Building skipped UnitTest that used resources.")
+		#else
 		let bundle = Bundle(for: type(of: self))
-		guard let path = bundle.path(forResource: "alice29", ofType: "txt") else {
-			print("skip file test. reason : failed open file.")
-			return
-		}
+		let path = bundle.path(forResource: "alice29", ofType: "txt")!
 		let data = NSData(contentsOfFile: path)! as Data
 		
 		XCTAssertEqual(FNV.fnv1_64(data), 0x87a1f8da448c5f20)
+		#endif
 	}
 	
 	
@@ -162,14 +166,15 @@ class FNVTests: XCTestCase {
 	}
 	
 	func testFNV1a_32_file() {
+		#if SWIFT_PACKAGE
+		print("\(self.description)SwiftPM-Building skipped UnitTest that used resources.")
+		#else
 		let bundle = Bundle(for: type(of: self))
-		guard let path = bundle.path(forResource: "alice29", ofType: "txt") else {
-			print("skip file test. reason : failed open file.")
-			return
-		}
+		let path = bundle.path(forResource: "alice29", ofType: "txt")!
 		let data = NSData(contentsOfFile: path)! as Data
 		
 		XCTAssertEqual(FNV.fnv1a_32(data), 0xdd55ad0a)
+		#endif
 	}
 	
 	
@@ -184,14 +189,15 @@ class FNVTests: XCTestCase {
 	}
 	
 	func testFNV1a_64_file() {
+		#if SWIFT_PACKAGE
+		print("\(self.description)SwiftPM-Building skipped UnitTest that used resources.")
+		#else
 		let bundle = Bundle(for: type(of: self))
-		guard let path = bundle.path(forResource: "alice29", ofType: "txt") else {
-			print("skip file test. reason : failed open file.")
-			return
-		}
+		let path = bundle.path(forResource: "alice29", ofType: "txt")!
 		let data = NSData(contentsOfFile: path)! as Data
 		
 		XCTAssertEqual(FNV.fnv1a_64(data), 0x345ebb394e2e3b0a)
+		#endif
 	}
 	
 }
