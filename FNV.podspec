@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
 
   spec.description  = <<-DESC
                    This is "FNV" (Fowler/Noll/Vo) hash framework in Swift.
-                   Framework include "FNV-0 32/64bit", "FNV-1 32/64bit", "FNV-1a 32/64bit" functions.
+                   A framework includes "FNV-0 32/64bit", "FNV-1 32/64bit", "FNV-1a 32/64bit" functions.
 
                    Original FNV algorithm created by Glenn Fowler, Landon Curt Noll, and Kiem-Phong Vo.  
                    DESC
