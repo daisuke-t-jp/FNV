@@ -27,7 +27,7 @@ let package = Package(
             name: "FNVTests",
             dependencies: ["FNV"]),
     ],
-	swiftLanguageVersions: [.v4_2]
+    swiftLanguageVersions: [.v4_2]
 )
 #else
 fatalError("Unsupported OS")
