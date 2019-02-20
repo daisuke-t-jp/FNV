@@ -21,7 +21,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "FNV",
-            dependencies: []),
+            dependencies: [],
+            exclude: ["FNV.xcodeproj", "README.md", "Sources/FNV/Info.plist", "Sources/FNV/FNV.h"]),
         .testTarget(
             name: "FNVTests",
             dependencies: ["FNV"]),
