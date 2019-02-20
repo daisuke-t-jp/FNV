@@ -37,10 +37,15 @@ end
 import PackageDescription
 
 let package = Package(
-    name: "YOUR_PROJECT_NAME",
+    name: "YOUR_PACKAGE_NAME",
     targets: [],
     dependencies: [
         .package(url: "https://github.com/daisuke-t-jp/FNV.git", from: "1.0.0")
+    ]
+    targets: [
+        .target(
+            name: "YOUR_TARGET_NAME",
+            dependencies: ["FNV"]),
     ]
 )
 ```
