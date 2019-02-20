@@ -51,12 +51,12 @@
 /* Begin PBXFileReference section */
 		021D6695220816C300D88FC1 /* FNV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FNV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		021D66A22208195300D88FC1 /* FNVTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FNVTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		026E3419221BA3FA008A8531 /* FNV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FNV.h; path = FNV.h; sourceTree = "<group>"; };
-		026E341A221BA3FA008A8531 /* FNV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FNV.swift; path = FNV.swift; sourceTree = "<group>"; };
-		026E341B221BA3FA008A8531 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Info.plist; sourceTree = "<group>"; };
-		026E3425221BA40F008A8531 /* alice29.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = alice29.txt; path = alice29.txt; sourceTree = "<group>"; };
-		026E3426221BA40F008A8531 /* FNVTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FNVTests.swift; path = FNVTests.swift; sourceTree = "<group>"; };
-		026E3427221BA40F008A8531 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Info.plist; sourceTree = "<group>"; };
+		026E3419221BA3FA008A8531 /* FNV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNV.h; sourceTree = "<group>"; };
+		026E341A221BA3FA008A8531 /* FNV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNV.swift; sourceTree = "<group>"; };
+		026E341B221BA3FA008A8531 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		026E3425221BA40F008A8531 /* alice29.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = alice29.txt; sourceTree = "<group>"; };
+		026E3426221BA40F008A8531 /* FNVTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNVTests.swift; sourceTree = "<group>"; };
+		026E3427221BA40F008A8531 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		029D31642207CCB9009FA98A /* FNV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FNV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		029D316D2207CCB9009FA98A /* FNVTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FNVTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E31724622114394004B84DF /* FNVTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FNVTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
