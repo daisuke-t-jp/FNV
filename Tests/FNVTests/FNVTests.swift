@@ -15,13 +15,19 @@ class FNVTests: XCTestCase {
 	static var allTests = [
 		("testFNV0_overload", testFNV0_overload),
 		("testFNV0_32", testFNV0_32),
+		("testFNV0_32_file", testFNV0_32_file),
 		("testFNV0_64", testFNV0_64),
+		("testFNV0_64_file", testFNV0_64_file),
 		("testFNV1_overload", testFNV1_overload),
 		("testFNV1_32", testFNV1_32),
+		("testFNV1_32_file", testFNV1_32_file),
 		("testFNV1_64", testFNV1_64),
+		("testFNV1_64_file", testFNV1_64_file),
 		("testFNV1a_overload", testFNV1a_overload),
 		("testFNV1a_32", testFNV1a_32),
+		("testFNV1a_32_file", testFNV1a_32_file),
 		("testFNV1a_64", testFNV1a_64),
+		("testFNV1a_64_file", testFNV1a_64_file),
 		]
 	
 
@@ -55,7 +61,7 @@ class FNVTests: XCTestCase {
 	
 	func testFNV0_32_file() {
 		#if SWIFT_PACKAGE
-		print("\(self.description)SwiftPM-Building skipped UnitTest that used resources.")
+		print("[Swift-PM]Skipped UnitTest that used resources.")
 		#else
 		let bundle = Bundle(for: type(of: self))
 		let path = bundle.path(forResource: "alice29", ofType: "txt")!
@@ -78,7 +84,7 @@ class FNVTests: XCTestCase {
 	
 	func testFNV0_64_file() {
 		#if SWIFT_PACKAGE
-		print("\(self.description)SwiftPM-Building skipped UnitTest that used resources.")
+		print("[Swift-PM]Skipped UnitTest that used resources.")
 		#else
 		let bundle = Bundle(for: type(of: self))
 		let path = bundle.path(forResource: "alice29", ofType: "txt")!
@@ -111,7 +117,7 @@ class FNVTests: XCTestCase {
 	
 	func testFNV1_32_file() {
 		#if SWIFT_PACKAGE
-		print("\(self.description)SwiftPM-Building skipped UnitTest that used resources.")
+		print("[Swift-PM]Skipped UnitTest that used resources.")
 		#else
 		let bundle = Bundle(for: type(of: self))
 		let path = bundle.path(forResource: "alice29", ofType: "txt")!
@@ -134,7 +140,7 @@ class FNVTests: XCTestCase {
 	
 	func testFNV1_64_file() {
 		#if SWIFT_PACKAGE
-		print("\(self.description)SwiftPM-Building skipped UnitTest that used resources.")
+		print("[Swift-PM]Skipped UnitTest that used resources.")
 		#else
 		let bundle = Bundle(for: type(of: self))
 		let path = bundle.path(forResource: "alice29", ofType: "txt")!
@@ -167,7 +173,7 @@ class FNVTests: XCTestCase {
 	
 	func testFNV1a_32_file() {
 		#if SWIFT_PACKAGE
-		print("\(self.description)SwiftPM-Building skipped UnitTest that used resources.")
+		print("[Swift-PM]Skipped UnitTest that used resources.")
 		#else
 		let bundle = Bundle(for: type(of: self))
 		let path = bundle.path(forResource: "alice29", ofType: "txt")!
@@ -190,7 +196,7 @@ class FNVTests: XCTestCase {
 	
 	func testFNV1a_64_file() {
 		#if SWIFT_PACKAGE
-		print("\(self.description)SwiftPM-Building skipped UnitTest that used resources.")
+		print("[Swift-PM]Skipped UnitTest that used resources.")
 		#else
 		let bundle = Bundle(for: type(of: self))
 		let path = bundle.path(forResource: "alice29", ofType: "txt")!
