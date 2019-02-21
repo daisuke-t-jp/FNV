@@ -1,6 +1,6 @@
 <img src="https://github.com/daisuke-t-jp/FNV/blob/master/doc/header.png" width="700"></br>
 ------
-![Platform](https://img.shields.io/badge/Platform-iOS%2010.0+%20%7C%20macOS%2010.12+%20%7C%20tvOS%2012.0+-blue.svg)
+![Platform](https://img.shields.io/badge/Platform-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20Linux-blue.svg)
 [![Language Swift%204.2](https://img.shields.io/badge/Language-Swift%204.2-orange.svg)](https://developer.apple.com/swift)
 [![Cocoapods](https://img.shields.io/cocoapods/v/FNV.svg)](https://cocoapods.org/pods/FNV)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-green.svg)](https://github.com/Carthage/Carthage)
@@ -19,7 +19,15 @@ Reference :
 - [FNV Hash](http://www.isthe.com/chongo/tech/comp/fnv/index.html)
 
 
-# Install
+# Requirements
+- Platforms
+  - iOS 10.0+
+  - macOS 10.12+
+  - tvOS 12.0+
+  - Linux
+- Swift 4.2+
+
+# Installation
 ## CocoaPods
 ```
 use_frameworks!
