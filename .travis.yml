@@ -41,7 +41,7 @@ matrix:
             - libicu-dev
             - icu-devtools
             - libbsd-dev 
-            - ibedit-dev
+            - libedit-dev
             - libxml2-dev
             - libsqlite3-dev
             - swig
