@@ -68,83 +68,83 @@ import FNV
 ## FNV-0
 ``` swift
 /**
- * 32bit hash
+ * 32bit digest
  */
 // Generate from [UInt8].
-let hash = FNV.fnv0_32(Array("string".utf8))
+let digest = FNV.fnv0_32(Array("string".utf8))
 
 // Generate from String.
-let hash = FNV.fnv0_32("string")
+let digest = FNV.fnv0_32("string")
 
 // Generate from Data.
-let hash = FNV.fnv0_32("string".data(using: .utf8)!)
+let digest = FNV.fnv0_32("string".data(using: .utf8)!)
 
 
 /**
- * 64bit hash
+ * 64bit digest
  */
 // Generate from [UInt8].
-let hash = FNV.fnv0_64(Array("string".utf8))
+let digest = FNV.fnv0_64(Array("string".utf8))
 
 // Generate from String.
-let hash = FNV.fnv0_64("string")
+let digest = FNV.fnv0_64("string")
 
 // Generate from Data.
-let hash = FNV.fnv0_64("string".data(using: .utf8)!)
+let digest = FNV.fnv0_64("string".data(using: .utf8)!)
 ```
 
 ## FNV-1
 ``` swift
 /**
- * 32bit hash
+ * 32bit digest
  */
 // Generate from [UInt8].
-let hash = FNV.fnv1_32(Array("string".utf8))
+let digest = FNV.fnv1_32(Array("string".utf8))
 
 // Generate from String.
-let hash = FNV.fnv1_32("string")
+let digest = FNV.fnv1_32("string")
 
 // Generate from Data.
-let hash = FNV.fnv1_32("string".data(using: .utf8)!)
+let digest = FNV.fnv1_32("string".data(using: .utf8)!)
 
 
 /**
- * 64bit hash
+ * 64bit digest
  */
 // Generate from [UInt8].
-let hash = FNV.fnv1_64(Array("string".utf8))
+let digest = FNV.fnv1_64(Array("string".utf8))
 
 // Generate from String.
-let hash = FNV.fnv1_64("string")
+let digest = FNV.fnv1_64("string")
 
 // Generate from Data.
-let hash = FNV.fnv1_64("string".data(using: .utf8)!)
+let digest = FNV.fnv1_64("string".data(using: .utf8)!)
 ```
 
 ## FNV-1a
 ``` swift
 /**
- * 32bit hash
+ * 32bit digest
  */
 // Generate from [UInt8].
-let hash = FNV.fnv1a_32(Array("string".utf8))
+let digest = FNV.fnv1a_32(Array("string".utf8))
 
 // Generate from String.
-let hash = FNV.fnv1a_32("string")
+let digest = FNV.fnv1a_32("string")
 
 // Generate from Data.
-let hash = FNV.fnv1a_32("string".data(using: .utf8)!)
+let digest = FNV.fnv1a_32("string".data(using: .utf8)!)
 
 
 /**
- * 64bit hash
+ * 64bit digest
  */
 // Generate from [UInt8].
-let hash = FNV.fnv1a_64(Array("string".utf8))
+let digest = FNV.fnv1a_64(Array("string".utf8))
 
 // Generate from String.
-let hash = FNV.fnv1a_64("string")
+let digest = FNV.fnv1a_64("string")
 
 // Generate from Data.
-let hash = FNV.fnv1a_64("string".data(using: .utf8)!)
+let digest = FNV.fnv1a_64("string".data(using: .utf8)!)
 ```
