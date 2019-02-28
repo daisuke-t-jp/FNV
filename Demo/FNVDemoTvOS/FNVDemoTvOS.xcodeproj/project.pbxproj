@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02AB4F6D2227CCF000BDC373 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB4F6C2227CCF000BDC373 /* Common.swift */; };
 		02CBB3EB221AA27A000BCF7E /* alice29.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02CBB3EA221AA27A000BCF7E /* alice29.txt */; };
 		7EDDC6BF2211348F00C9FAAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDC6BE2211348F00C9FAAA /* AppDelegate.swift */; };
 		7EDDC6C12211348F00C9FAAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDC6C02211348F00C9FAAA /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02AB4F6C2227CCF000BDC373 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = ../../Common.swift; sourceTree = "<group>"; };
 		02CBB3EA221AA27A000BCF7E /* alice29.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = alice29.txt; sourceTree = "<group>"; };
 		285BF74D74538BC33663396C /* Pods-FNVDemoTvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FNVDemoTvOS.debug.xcconfig"; path = "Target Support Files/Pods-FNVDemoTvOS/Pods-FNVDemoTvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7EDDC6BB2211348F00C9FAAA /* FNVDemoTvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FNVDemoTvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 		7EDDC6BD2211348F00C9FAAA /* FNVDemoTvOS */ = {
 			isa = PBXGroup;
 			children = (
+				02AB4F6C2227CCF000BDC373 /* Common.swift */,
 				7EDDC6BE2211348F00C9FAAA /* AppDelegate.swift */,
 				7EDDC6C02211348F00C9FAAA /* ViewController.swift */,
 				7EDDC6C22211348F00C9FAAA /* Main.storyboard */,
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EDDC6C12211348F00C9FAAA /* ViewController.swift in Sources */,
+				02AB4F6D2227CCF000BDC373 /* Common.swift in Sources */,
 				7EDDC6BF2211348F00C9FAAA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

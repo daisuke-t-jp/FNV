@@ -12,6 +12,7 @@
 		021D66B62208283200D88FC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021D66B42208283200D88FC1 /* Main.storyboard */; };
 		021D66B82208283400D88FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021D66B72208283400D88FC1 /* Assets.xcassets */; };
 		021D66BB2208283400D88FC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021D66B92208283400D88FC1 /* LaunchScreen.storyboard */; };
+		02AB4F6B2227CC7C00BDC373 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB4F6A2227CC7C00BDC373 /* Common.swift */; };
 		02CBB3E9221AA143000BCF7E /* alice29.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02CBB3E8221AA143000BCF7E /* alice29.txt */; };
 		A8A0876ADCF57BF312DF1066 /* Pods_FNVDemoiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9923736533B7BCD12C08D1CC /* Pods_FNVDemoiOS.framework */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		021D66B72208283400D88FC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		021D66BA2208283400D88FC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		021D66BC2208283400D88FC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02AB4F6A2227CC7C00BDC373 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = ../../Common.swift; sourceTree = "<group>"; };
 		02CBB3E8221AA143000BCF7E /* alice29.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = alice29.txt; sourceTree = "<group>"; };
 		6A5753724AB62E311C1A4D3C /* Pods-FNVDemoiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FNVDemoiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FNVDemoiOS/Pods-FNVDemoiOS.release.xcconfig"; sourceTree = "<group>"; };
 		9923736533B7BCD12C08D1CC /* Pods_FNVDemoiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FNVDemoiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +65,7 @@
 		021D66AF2208283200D88FC1 /* FNVDemoiOS */ = {
 			isa = PBXGroup;
 			children = (
+				02AB4F6A2227CC7C00BDC373 /* Common.swift */,
 				021D66B02208283200D88FC1 /* AppDelegate.swift */,
 				021D66B22208283200D88FC1 /* ViewController.swift */,
 				021D66B42208283200D88FC1 /* Main.storyboard */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				021D66B32208283200D88FC1 /* ViewController.swift in Sources */,
+				02AB4F6B2227CC7C00BDC373 /* Common.swift in Sources */,
 				021D66B12208283200D88FC1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
