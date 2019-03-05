@@ -1,5 +1,5 @@
 PODS:
-  - FNV (1.0.8)
+  - FNV (1.0.9)
 
 DEPENDENCIES:
   - FNV (from `../../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  FNV: 6ca458aec4e8a6e8d0c5f38387d7ac04654582aa
+  FNV: d77b6a878b112406888de840f3536a1c5625e7fc
 
 PODFILE CHECKSUM: de02e565824fb1aaeb86329ba37f56018aebb4f3
 
