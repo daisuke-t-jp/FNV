@@ -10,13 +10,12 @@
 
 # Introduction
 
-**FNV** (Fowler/Noll/Vo) hash framework in Swift.  
+[**FNV**](http://www.isthe.com/chongo/tech/comp/fnv/index.html) (Fowler/Noll/Vo) hash framework in Swift.  
 A framework includes FNV-0(32/64bit), FNV-1(32/64bit), FNV-1a(32/64bit) functions.  
   
 Original FNV algorithm created by Glenn Fowler, Landon Curt Noll, and Kiem-Phong Vo.  
   
-Reference :
-- [FNV Hash](http://www.isthe.com/chongo/tech/comp/fnv/index.html)
+[Documentation](https://daisuke-t-jp.github.io/FNV/index.html)
 
 
 # Requirements
@@ -60,8 +59,6 @@ let package = Package(
 
 
 # Usage
-
-[Documentation](https://daisuke-t-jp.github.io/FNV/index.html)
 
 ## Import framework
 ``` swift
