@@ -21,6 +21,21 @@ public class FNV {
 
 
 
+// MARK: - Utility
+extension FNV {
+	
+	static private func UInt32ToHex(_ val: UInt32) -> String {
+		return String.init(format: "%08x", val)
+	}
+	
+	static private func UInt64ToHex(_ val: UInt64) -> String {
+		return String.init(format: "%016lx", val)
+	}
+	
+}
+
+
+
 // MARK: - Algorithm
 extension FNV {
 	
@@ -72,6 +87,29 @@ extension FNV {
 	}
 	
 	
+	/// Generate FNV-0 32bit digest's hex string
+	///
+	/// - Parameters:
+	///   - array: A source data for hash.
+	/// - Returns: A generated digest's hex string.
+	static public func fnv0_32Hex(_ array: [UInt8]) -> String {
+		let h = fnv0_32(array)
+		return UInt32ToHex(h)
+	}
+	
+	/// Overload func for "fnv0_32Hex(_ array: [UInt8])".
+	static public func fnv0_32Hex(_ string: String) -> String {
+		let h = fnv0_32(string)
+		return UInt32ToHex(h)
+	}
+	
+	/// Overload func for "fnv0_32Hex(_ array: [UInt8])".
+	static public func fnv0_32Hex(_ data: Data) -> String {
+		let h = fnv0_32(data)
+		return UInt32ToHex(h)
+	}
+	
+	
 	/// Generate FNV-0 64bit digest.
 	///
 	/// - Parameter array: A source data for hash.
@@ -88,6 +126,29 @@ extension FNV {
 	/// Overload func for "fnv0_64(_ array: [UInt8])".
 	static public func fnv0_64(_ data: Data) -> UInt64 {
 		return fnv1([UInt8](data), offsetBasis: 0, prime: prime64)
+	}
+	
+	
+	/// Generate FNV-0 64bit digest's hex string
+	///
+	/// - Parameters:
+	///   - array: A source data for hash.
+	/// - Returns: A generated digest's hex string.
+	static public func fnv0_64Hex(_ array: [UInt8]) -> String {
+		let h = fnv0_64(array)
+		return UInt64ToHex(h)
+	}
+	
+	/// Overload func for "fnv0_64Hex(_ array: [UInt8])".
+	static public func fnv0_64Hex(_ string: String) -> String {
+		let h = fnv0_64(string)
+		return UInt64ToHex(h)
+	}
+	
+	/// Overload func for "fnv0_64Hex(_ array: [UInt8])".
+	static public func fnv0_64Hex(_ data: Data) -> String {
+		let h = fnv0_64(data)
+		return UInt64ToHex(h)
 	}
 	
 }
@@ -115,6 +176,30 @@ extension FNV {
 		return fnv1([UInt8](data), offsetBasis: offsetBasis32, prime: prime32)
 	}
 	
+	
+	/// Generate FNV-1 32bit digest's hex string
+	///
+	/// - Parameters:
+	///   - array: A source data for hash.
+	/// - Returns: A generated digest's hex string.
+	static public func fnv1_32Hex(_ array: [UInt8]) -> String {
+		let h = fnv1_32(array)
+		return UInt32ToHex(h)
+	}
+	
+	/// Overload func for "fnv1_32Hex(_ array: [UInt8])".
+	static public func fnv1_32Hex(_ string: String) -> String {
+		let h = fnv1_32(string)
+		return UInt32ToHex(h)
+	}
+	
+	/// Overload func for "fnv1_32Hex(_ array: [UInt8])".
+	static public func fnv1_32Hex(_ data: Data) -> String {
+		let h = fnv1_32(data)
+		return UInt32ToHex(h)
+	}
+	
+	
 	/// Generate FNV-1 64bit digest.
 	///
 	/// - Parameter array: A source data for hash.
@@ -131,6 +216,29 @@ extension FNV {
 	/// Overload func for "fnv1_64(_ array: [UInt8])".
 	static public func fnv1_64(_ data: Data) -> UInt64 {
 		return fnv1([UInt8](data), offsetBasis: offsetBasis64, prime: prime64)
+	}
+	
+	
+	/// Generate FNV-1 64bit digest's hex string
+	///
+	/// - Parameters:
+	///   - array: A source data for hash.
+	/// - Returns: A generated digest's hex string.
+	static public func fnv1_64Hex(_ array: [UInt8]) -> String {
+		let h = fnv1_64(array)
+		return UInt64ToHex(h)
+	}
+	
+	/// Overload func for "fnv1_64Hex(_ array: [UInt8])".
+	static public func fnv1_64Hex(_ string: String) -> String {
+		let h = fnv1_64(string)
+		return UInt64ToHex(h)
+	}
+	
+	/// Overload func for "fnv1_64Hex(_ array: [UInt8])".
+	static public func fnv1_64Hex(_ data: Data) -> String {
+		let h = fnv1_64(data)
+		return UInt64ToHex(h)
 	}
 	
 }
@@ -159,6 +267,29 @@ extension FNV {
 	}
 	
 	
+	/// Generate FNV-1a 32bit digest's hex string
+	///
+	/// - Parameters:
+	///   - array: A source data for hash.
+	/// - Returns: A generated digest's hex string.
+	static public func fnv1a_32Hex(_ array: [UInt8]) -> String {
+		let h = fnv1a_32(array)
+		return UInt32ToHex(h)
+	}
+	
+	/// Overload func for "fnv1a_32Hex(_ array: [UInt8])".
+	static public func fnv1a_32Hex(_ string: String) -> String {
+		let h = fnv1a_32(string)
+		return UInt32ToHex(h)
+	}
+	
+	/// Overload func for "fnv1_32Hex(_ array: [UInt8])".
+	static public func fnv1a_32Hex(_ data: Data) -> String {
+		let h = fnv1a_32(data)
+		return UInt32ToHex(h)
+	}
+	
+	
 	/// Generate FNV-1a 64bit digest.
 	///
 	/// - Parameter array: A source data for hash.
@@ -175,6 +306,29 @@ extension FNV {
 	/// Overload func for "fnv1a_64(_ array: [UInt8])".
 	static public func fnv1a_64(_ data: Data) -> UInt64 {
 		return fnv1a([UInt8](data), offsetBasis: offsetBasis64, prime: prime64)
+	}
+	
+	
+	/// Generate FNV-1a 64bit digest's hex string
+	///
+	/// - Parameters:
+	///   - array: A source data for hash.
+	/// - Returns: A generated digest's hex string.
+	static public func fnv1a_64Hex(_ array: [UInt8]) -> String {
+		let h = fnv1a_64(array)
+		return UInt64ToHex(h)
+	}
+	
+	/// Overload func for "fnv1a_64Hex(_ array: [UInt8])".
+	static public func fnv1a_64Hex(_ string: String) -> String {
+		let h = fnv1a_64(string)
+		return UInt64ToHex(h)
+	}
+	
+	/// Overload func for "fnv1_64Hex(_ array: [UInt8])".
+	static public func fnv1a_64Hex(_ data: Data) -> String {
+		let h = fnv1a_64(data)
+		return UInt64ToHex(h)
 	}
 	
 }
