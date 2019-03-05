@@ -60,6 +60,9 @@ let package = Package(
 
 
 # Usage
+
+[Documentation](https://daisuke-t-jp.github.io/FNV/index.html)
+
 ## Import framework
 ``` swift
 import FNV
