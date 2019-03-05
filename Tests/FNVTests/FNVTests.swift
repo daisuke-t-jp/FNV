@@ -50,6 +50,8 @@ class FNVTests: XCTestCase {
 	}
 	
 	func testFNV0_32() {
+		XCTAssertEqual(FNV.fnv0_32Hex("Hello World!").lowercased(), "6990d79d")
+		
 		XCTAssertEqual(FNV.fnv0_32("Hello World!"), 0x6990d79d)
 		XCTAssertEqual(FNV.fnv0_32("0123456789"), 0xbd4df361)
 		XCTAssertEqual(FNV.fnv0_32("01234abcde"), 0x4279cf95)
@@ -73,6 +75,8 @@ class FNVTests: XCTestCase {
 	
 	
 	func testFNV0_64() {
+		XCTAssertEqual(FNV.fnv0_64Hex("Hello World!").lowercased(), "dd8b4a711cd6199d")
+		
 		XCTAssertEqual(FNV.fnv0_64("Hello World!"), 0xdd8b4a711cd6199d)
 		XCTAssertEqual(FNV.fnv0_64("0123456789"), 0xea65d9a60e6e2be1)
 		XCTAssertEqual(FNV.fnv0_64("01234abcde"), 0xe751ec63313f3295)
@@ -106,6 +110,8 @@ class FNVTests: XCTestCase {
 	}
 	
 	func testFNV1_32() {
+		XCTAssertEqual(FNV.fnv1_32Hex("Hello World!").lowercased(), "12a9a41c")
+		
 		XCTAssertEqual(FNV.fnv1_32("Hello World!"), 0x12a9a41c)
 		XCTAssertEqual(FNV.fnv1_32("0123456789"), 0x6792412c)
 		XCTAssertEqual(FNV.fnv1_32("01234abcde"), 0x3afc3ca8)
@@ -129,6 +135,8 @@ class FNVTests: XCTestCase {
 	
 	
 	func testFNV1_64() {
+		XCTAssertEqual(FNV.fnv1_64Hex("Hello World!").lowercased(), "8e59dd02f68c387c")
+		
 		XCTAssertEqual(FNV.fnv1_64("Hello World!"), 0x8e59dd02f68c387c)
 		XCTAssertEqual(FNV.fnv1_64("0123456789"), 0xc3f080735df30b0c)
 		XCTAssertEqual(FNV.fnv1_64("01234abcde"), 0x94af5b2f453b3f08)
@@ -162,6 +170,8 @@ class FNVTests: XCTestCase {
 	}
 	
 	func testFNV1a_32() {
+		XCTAssertEqual(FNV.fnv1a_32Hex("Hello World!").lowercased(), "b1ea4872")
+		
 		XCTAssertEqual(FNV.fnv1a_32("Hello World!"), 0xb1ea4872)
 		XCTAssertEqual(FNV.fnv1a_32("0123456789"), 0xf9808ff2)
 		XCTAssertEqual(FNV.fnv1a_32("01234abcde"), 0xd80f04be)
@@ -185,6 +195,8 @@ class FNVTests: XCTestCase {
 	
 	
 	func testFNV1a_64() {
+		XCTAssertEqual(FNV.fnv1a_64Hex("Hello World!").lowercased(), "8c0ec8d1fb9e6e32")
+		
 		XCTAssertEqual(FNV.fnv1a_64("Hello World!"), 0x8c0ec8d1fb9e6e32)
 		XCTAssertEqual(FNV.fnv1a_64("0123456789"), 0x50c0aafd8b4330b2)
 		XCTAssertEqual(FNV.fnv1a_64("01234abcde"), 0x372f27a9f4dd95fe)
