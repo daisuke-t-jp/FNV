@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// FNV class
 public class FNV {
 	
 	// MARK: - Enum, Const
@@ -21,7 +22,7 @@ public class FNV {
 
 
 // MARK: - Algorithm
-public extension FNV {
+extension FNV {
 	
 	static private func fnv1<T: FixedWidthInteger>(_ array: [UInt8], offsetBasis: T, prime: T) -> T {
 		var hash: T = offsetBasis
@@ -50,7 +51,7 @@ public extension FNV {
 
 
 // MARK: - FNV-0
-public extension FNV {
+extension FNV {
 	
 	/// Generate FNV-0 32bit digest.
 	///
@@ -94,7 +95,7 @@ public extension FNV {
 
 
 // MARK: - FNV-1
-public extension FNV {
+extension FNV {
 	
 	/// Generate FNV-1 32bit digest.
 	///
@@ -137,7 +138,7 @@ public extension FNV {
 
 
 // MARK: - FNV-1a
-public extension FNV {
+extension FNV {
 	
 	/// Generate FNV-1a 32bit digest.
 	///
