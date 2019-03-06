@@ -65,86 +65,163 @@ let package = Package(
 import FNV
 ```
 
-## FNV-0
+## Generate digest(One-shot)
+
+### FNV-0
 ``` swift
 /**
- * 32bit digest
+ * 32 bit
  */
-// Generate from [UInt8].
-let digest = FNV.fnv0_32(Array("string".utf8))
+let digest = FNV.FNV0_32.digest("Hello World!")
+// digest -> 0x6990d79d
 
-// Generate from String.
-let digest = FNV.fnv0_32("string")
-
-// Generate from Data.
-let digest = FNV.fnv0_32("string".data(using: .utf8)!)
+let digestHex = FNV.FNV0_32.digestHex("Hello World!")
+// digestHex -> "6990d79d"
 
 
 /**
- * 64bit digest
+ * 64bit
  */
-// Generate from [UInt8].
-let digest = FNV.fnv0_64(Array("string".utf8))
+let digest = FNV.FNV0_64.digest("Hello World!")
+// digest -> 0xdd8b4a711cd6199d
 
-// Generate from String.
-let digest = FNV.fnv0_64("string")
-
-// Generate from Data.
-let digest = FNV.fnv0_64("string".data(using: .utf8)!)
+let digestHex = FNV.FNV0_64.digestHex("Hello World!")
+// digestHex -> "dd8b4a711cd6199d"
 ```
 
 ## FNV-1
 ``` swift
 /**
- * 32bit digest
+ * 32 bit
  */
-// Generate from [UInt8].
-let digest = FNV.fnv1_32(Array("string".utf8))
+let digest = FNV.FNV1_32.digest("Hello World!")
+// digest -> 0x12a9a41c
 
-// Generate from String.
-let digest = FNV.fnv1_32("string")
-
-// Generate from Data.
-let digest = FNV.fnv1_32("string".data(using: .utf8)!)
+let digestHex = FNV.FNV1_32.digestHex("Hello World!")
+// digestHex -> "12a9a41c"
 
 
 /**
- * 64bit digest
+ * 64bit
  */
-// Generate from [UInt8].
-let digest = FNV.fnv1_64(Array("string".utf8))
+let digest = FNV.FNV1_64.digest("Hello World!")
+// digest -> 0x8e59dd02f68c387c
 
-// Generate from String.
-let digest = FNV.fnv1_64("string")
-
-// Generate from Data.
-let digest = FNV.fnv1_64("string".data(using: .utf8)!)
+let digestHex = FNV.FNV1_64.digestHex("Hello World!")
+// digestHex -> "8e59dd02f68c387c"
 ```
 
 ## FNV-1a
 ``` swift
 /**
- * 32bit digest
+ * 32 bit
  */
-// Generate from [UInt8].
-let digest = FNV.fnv1a_32(Array("string".utf8))
+let digest = FNV.FNV1a_32.digest("Hello World!")
+// digest -> 0xb1ea4872
 
-// Generate from String.
-let digest = FNV.fnv1a_32("string")
-
-// Generate from Data.
-let digest = FNV.fnv1a_32("string".data(using: .utf8)!)
+let digestHex = FNV.FNV1a_32.digestHex("Hello World!")
+// digestHex -> "b1ea4872"
 
 
 /**
- * 64bit digest
+ * 64bit
  */
-// Generate from [UInt8].
-let digest = FNV.fnv1a_64(Array("string".utf8))
+let digest = FNV.FNV1a_64.digest("Hello World!")
+// digest -> 0x8c0ec8d1fb9e6e32
 
-// Generate from String.
-let digest = FNV.fnv1a_64("string")
+let digestHex = FNV.FNV1a_64.digestHex("Hello World!")
+// digestHex -> "8c0ec8d1fb9e6e32"
+```
 
-// Generate from Data.
-let digest = FNV.fnv1a_64("string".data(using: .utf8)!)
+
+## Generate digest(Streaming)
+
+### FNV-0
+``` swift
+/**
+ * 32 bit
+ */
+let fnv = FNV.FNV0_32()
+fnv.update("Hello ")
+fnv.update("World!")
+
+let digest = fnv.digest()
+// digest -> 0x6990d79d
+
+let digestHex = fnv.digestHex()
+// digestHex -> "6990d79d"
+
+
+/**
+ * 64bit
+ */
+let fnv = FNV.FNV0_64()
+fnv.update("Hello ")
+fnv.update("World!")
+
+let digest = fnv.digest()
+// digest -> 0xdd8b4a711cd6199d
+
+let digestHex = fnv.digestHex()
+// digestHex -> "dd8b4a711cd6199d"
+```
+
+### FNV-1
+``` swift
+/**
+ * 32 bit
+ */
+let fnv = FNV.FNV1_32()
+fnv.update("Hello ")
+fnv.update("World!")
+
+let digest = fnv.digest()
+// digest -> 0x12a9a41c
+
+let digestHex = fnv.digestHex()
+// digestHex -> "12a9a41c"
+
+
+/**
+ * 64bit
+ */
+let fnv = FNV.FNV1_64()
+fnv.update("Hello ")
+fnv.update("World!")
+
+let digest = fnv.digest()
+// digest -> 0x8e59dd02f68c387c
+
+let digestHex = fnv.digestHex()
+// digestHex -> "8e59dd02f68c387c"
+```
+
+### FNV-1a
+``` swift
+/**
+ * 32 bit
+ */
+let fnv = FNV.FNV1a_32()
+fnv.update("Hello ")
+fnv.update("World!")
+
+let digest = fnv.digest()
+// digest -> 0xb1ea4872
+
+let digestHex = fnv.digestHex()
+// digestHex -> "b1ea4872"
+
+
+/**
+ * 64bit
+ */
+let fnv = FNV.FNV1a_64()
+fnv.update("Hello ")
+fnv.update("World!")
+
+let digest = fnv.digest()
+// digest -> 0x8c0ec8d1fb9e6e32
+
+let digestHex = fnv.digestHex()
+// digestHex -> "8c0ec8d1fb9e6e32"
 ```
