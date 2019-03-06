@@ -33,6 +33,24 @@
               <li class="nav-group-task">
                 <a href="Classes/FNV.html">FNV</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Classes/FNV/FNV0_32.html">– FNV0_32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FNV/FNV0_64.html">– FNV0_64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FNV/FNV1_32.html">– FNV1_32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FNV/FNV1_64.html">– FNV1_64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FNV/FNV1a_32.html">– FNV1a_32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FNV/FNV1a_64.html">– FNV1a_64</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -51,16 +69,12 @@
 <a href="https://travis-ci.org/daisuke-t-jp/FNV"><img src="https://travis-ci.org/daisuke-t-jp/FNV.svg?branch=master" alt="Build Status"></a></p>
 <h1 id='introduction' class='heading'>Introduction</h1>
 
-<p><strong>FNV</strong> (Fowler/Noll/Vo) hash framework in Swift.<br>
+<p><a href="http://www.isthe.com/chongo/tech/comp/fnv/index.html"><strong>FNV</strong></a> (Fowler/Noll/Vo) hash framework in Swift.<br>
 A framework includes FNV-0(32/64bit), FNV-1(32/64bit), FNV-1a(32/64bit) functions.  </p>
 
 <p>Original FNV algorithm created by Glenn Fowler, Landon Curt Noll, and Kiem-Phong Vo.  </p>
 
-<p>Reference :</p>
-
-<ul>
-<li><a href="http://www.isthe.com/chongo/tech/comp/fnv/index.html">FNV Hash</a></li>
-</ul>
+<p><a href="https://daisuke-t-jp.github.io/FNV/index.html">Documentation</a></p>
 <h1 id='requirements' class='heading'>Requirements</h1>
 
 <ul>
@@ -105,89 +119,157 @@ end
 <h2 id='import-framework' class='heading'>Import framework</h2>
 <pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">FNV</span>
 </code></pre>
-<h2 id='fnv-0' class='heading'>FNV-0</h2>
+<h2 id='generate-digest-one-shot' class='heading'>Generate digest(One-shot)</h2>
+<h3 id='fnv-0' class='heading'>FNV-0</h3>
 <pre class="highlight swift"><code><span class="cm">/**
- * 32bit digest
+ * 32 bit
  */</span>
-<span class="c1">// Generate from [UInt8].</span>
-<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="nf">fnv0_32</span><span class="p">(</span><span class="kt">Array</span><span class="p">(</span><span class="s">"string"</span><span class="o">.</span><span class="n">utf8</span><span class="p">))</span>
+<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="kt">FNV0_32</span><span class="o">.</span><span class="nf">digest</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span>
+<span class="c1">// digest -&gt; 0x6990d79d</span>
 
-<span class="c1">// Generate from String.</span>
-<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="nf">fnv0_32</span><span class="p">(</span><span class="s">"string"</span><span class="p">)</span>
-
-<span class="c1">// Generate from Data.</span>
-<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="nf">fnv0_32</span><span class="p">(</span><span class="s">"string"</span><span class="o">.</span><span class="nf">data</span><span class="p">(</span><span class="nv">using</span><span class="p">:</span> <span class="o">.</span><span class="n">utf8</span><span class="p">)</span><span class="o">!</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">digestHex</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="kt">FNV0_32</span><span class="o">.</span><span class="nf">digestHex</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span>
+<span class="c1">// digestHex -&gt; "6990d79d"</span>
 
 
 <span class="cm">/**
- * 64bit digest
+ * 64bit
  */</span>
-<span class="c1">// Generate from [UInt8].</span>
-<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="nf">fnv0_64</span><span class="p">(</span><span class="kt">Array</span><span class="p">(</span><span class="s">"string"</span><span class="o">.</span><span class="n">utf8</span><span class="p">))</span>
+<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="kt">FNV0_64</span><span class="o">.</span><span class="nf">digest</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span>
+<span class="c1">// digest -&gt; 0xdd8b4a711cd6199d</span>
 
-<span class="c1">// Generate from String.</span>
-<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="nf">fnv0_64</span><span class="p">(</span><span class="s">"string"</span><span class="p">)</span>
-
-<span class="c1">// Generate from Data.</span>
-<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="nf">fnv0_64</span><span class="p">(</span><span class="s">"string"</span><span class="o">.</span><span class="nf">data</span><span class="p">(</span><span class="nv">using</span><span class="p">:</span> <span class="o">.</span><span class="n">utf8</span><span class="p">)</span><span class="o">!</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">digestHex</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="kt">FNV0_64</span><span class="o">.</span><span class="nf">digestHex</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span>
+<span class="c1">// digestHex -&gt; "dd8b4a711cd6199d"</span>
 </code></pre>
 <h2 id='fnv-1' class='heading'>FNV-1</h2>
 <pre class="highlight swift"><code><span class="cm">/**
- * 32bit digest
+ * 32 bit
  */</span>
-<span class="c1">// Generate from [UInt8].</span>
-<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="nf">fnv1_32</span><span class="p">(</span><span class="kt">Array</span><span class="p">(</span><span class="s">"string"</span><span class="o">.</span><span class="n">utf8</span><span class="p">))</span>
+<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="kt">FNV1_32</span><span class="o">.</span><span class="nf">digest</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span>
+<span class="c1">// digest -&gt; 0x12a9a41c</span>
 
-<span class="c1">// Generate from String.</span>
-<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="nf">fnv1_32</span><span class="p">(</span><span class="s">"string"</span><span class="p">)</span>
-
-<span class="c1">// Generate from Data.</span>
-<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="nf">fnv1_32</span><span class="p">(</span><span class="s">"string"</span><span class="o">.</span><span class="nf">data</span><span class="p">(</span><span class="nv">using</span><span class="p">:</span> <span class="o">.</span><span class="n">utf8</span><span class="p">)</span><span class="o">!</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">digestHex</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="kt">FNV1_32</span><span class="o">.</span><span class="nf">digestHex</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span>
+<span class="c1">// digestHex -&gt; "12a9a41c"</span>
 
 
 <span class="cm">/**
- * 64bit digest
+ * 64bit
  */</span>
-<span class="c1">// Generate from [UInt8].</span>
-<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="nf">fnv1_64</span><span class="p">(</span><span class="kt">Array</span><span class="p">(</span><span class="s">"string"</span><span class="o">.</span><span class="n">utf8</span><span class="p">))</span>
+<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="kt">FNV1_64</span><span class="o">.</span><span class="nf">digest</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span>
+<span class="c1">// digest -&gt; 0x8e59dd02f68c387c</span>
 
-<span class="c1">// Generate from String.</span>
-<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="nf">fnv1_64</span><span class="p">(</span><span class="s">"string"</span><span class="p">)</span>
-
-<span class="c1">// Generate from Data.</span>
-<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="nf">fnv1_64</span><span class="p">(</span><span class="s">"string"</span><span class="o">.</span><span class="nf">data</span><span class="p">(</span><span class="nv">using</span><span class="p">:</span> <span class="o">.</span><span class="n">utf8</span><span class="p">)</span><span class="o">!</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">digestHex</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="kt">FNV1_64</span><span class="o">.</span><span class="nf">digestHex</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span>
+<span class="c1">// digestHex -&gt; "8e59dd02f68c387c"</span>
 </code></pre>
 <h2 id='fnv-1a' class='heading'>FNV-1a</h2>
 <pre class="highlight swift"><code><span class="cm">/**
- * 32bit digest
+ * 32 bit
  */</span>
-<span class="c1">// Generate from [UInt8].</span>
-<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="nf">fnv1a_32</span><span class="p">(</span><span class="kt">Array</span><span class="p">(</span><span class="s">"string"</span><span class="o">.</span><span class="n">utf8</span><span class="p">))</span>
+<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="kt">FNV1a_32</span><span class="o">.</span><span class="nf">digest</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span>
+<span class="c1">// digest -&gt; 0xb1ea4872</span>
 
-<span class="c1">// Generate from String.</span>
-<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="nf">fnv1a_32</span><span class="p">(</span><span class="s">"string"</span><span class="p">)</span>
-
-<span class="c1">// Generate from Data.</span>
-<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="nf">fnv1a_32</span><span class="p">(</span><span class="s">"string"</span><span class="o">.</span><span class="nf">data</span><span class="p">(</span><span class="nv">using</span><span class="p">:</span> <span class="o">.</span><span class="n">utf8</span><span class="p">)</span><span class="o">!</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">digestHex</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="kt">FNV1a_32</span><span class="o">.</span><span class="nf">digestHex</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span>
+<span class="c1">// digestHex -&gt; "b1ea4872"</span>
 
 
 <span class="cm">/**
- * 64bit digest
+ * 64bit
  */</span>
-<span class="c1">// Generate from [UInt8].</span>
-<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="nf">fnv1a_64</span><span class="p">(</span><span class="kt">Array</span><span class="p">(</span><span class="s">"string"</span><span class="o">.</span><span class="n">utf8</span><span class="p">))</span>
+<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="kt">FNV1a_64</span><span class="o">.</span><span class="nf">digest</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span>
+<span class="c1">// digest -&gt; 0x8c0ec8d1fb9e6e32</span>
 
-<span class="c1">// Generate from String.</span>
-<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="nf">fnv1a_64</span><span class="p">(</span><span class="s">"string"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">digestHex</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="kt">FNV1a_64</span><span class="o">.</span><span class="nf">digestHex</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span>
+<span class="c1">// digestHex -&gt; "8c0ec8d1fb9e6e32"</span>
+</code></pre>
+<h2 id='generate-digest-streaming' class='heading'>Generate digest(Streaming)</h2>
+<h3 id='fnv-0' class='heading'>FNV-0</h3>
+<pre class="highlight swift"><code><span class="cm">/**
+ * 32 bit
+ */</span>
+<span class="k">let</span> <span class="nv">fnv</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="kt">FNV0_32</span><span class="p">()</span>
+<span class="n">fnv</span><span class="o">.</span><span class="nf">update</span><span class="p">(</span><span class="s">"Hello "</span><span class="p">)</span>
+<span class="n">fnv</span><span class="o">.</span><span class="nf">update</span><span class="p">(</span><span class="s">"World!"</span><span class="p">)</span>
 
-<span class="c1">// Generate from Data.</span>
-<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="nf">fnv1a_64</span><span class="p">(</span><span class="s">"string"</span><span class="o">.</span><span class="nf">data</span><span class="p">(</span><span class="nv">using</span><span class="p">:</span> <span class="o">.</span><span class="n">utf8</span><span class="p">)</span><span class="o">!</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="n">fnv</span><span class="o">.</span><span class="nf">digest</span><span class="p">()</span>
+<span class="c1">// digest -&gt; 0x6990d79d</span>
+
+<span class="k">let</span> <span class="nv">digestHex</span> <span class="o">=</span> <span class="n">fnv</span><span class="o">.</span><span class="nf">digestHex</span><span class="p">()</span>
+<span class="c1">// digestHex -&gt; "6990d79d"</span>
+
+
+<span class="cm">/**
+ * 64bit
+ */</span>
+<span class="k">let</span> <span class="nv">fnv</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="kt">FNV0_64</span><span class="p">()</span>
+<span class="n">fnv</span><span class="o">.</span><span class="nf">update</span><span class="p">(</span><span class="s">"Hello "</span><span class="p">)</span>
+<span class="n">fnv</span><span class="o">.</span><span class="nf">update</span><span class="p">(</span><span class="s">"World!"</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="n">fnv</span><span class="o">.</span><span class="nf">digest</span><span class="p">()</span>
+<span class="c1">// digest -&gt; 0xdd8b4a711cd6199d</span>
+
+<span class="k">let</span> <span class="nv">digestHex</span> <span class="o">=</span> <span class="n">fnv</span><span class="o">.</span><span class="nf">digestHex</span><span class="p">()</span>
+<span class="c1">// digestHex -&gt; "dd8b4a711cd6199d"</span>
+</code></pre>
+<h3 id='fnv-1' class='heading'>FNV-1</h3>
+<pre class="highlight swift"><code><span class="cm">/**
+ * 32 bit
+ */</span>
+<span class="k">let</span> <span class="nv">fnv</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="kt">FNV1_32</span><span class="p">()</span>
+<span class="n">fnv</span><span class="o">.</span><span class="nf">update</span><span class="p">(</span><span class="s">"Hello "</span><span class="p">)</span>
+<span class="n">fnv</span><span class="o">.</span><span class="nf">update</span><span class="p">(</span><span class="s">"World!"</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="n">fnv</span><span class="o">.</span><span class="nf">digest</span><span class="p">()</span>
+<span class="c1">// digest -&gt; 0x12a9a41c</span>
+
+<span class="k">let</span> <span class="nv">digestHex</span> <span class="o">=</span> <span class="n">fnv</span><span class="o">.</span><span class="nf">digestHex</span><span class="p">()</span>
+<span class="c1">// digestHex -&gt; "12a9a41c"</span>
+
+
+<span class="cm">/**
+ * 64bit
+ */</span>
+<span class="k">let</span> <span class="nv">fnv</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="kt">FNV1_64</span><span class="p">()</span>
+<span class="n">fnv</span><span class="o">.</span><span class="nf">update</span><span class="p">(</span><span class="s">"Hello "</span><span class="p">)</span>
+<span class="n">fnv</span><span class="o">.</span><span class="nf">update</span><span class="p">(</span><span class="s">"World!"</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="n">fnv</span><span class="o">.</span><span class="nf">digest</span><span class="p">()</span>
+<span class="c1">// digest -&gt; 0x8e59dd02f68c387c</span>
+
+<span class="k">let</span> <span class="nv">digestHex</span> <span class="o">=</span> <span class="n">fnv</span><span class="o">.</span><span class="nf">digestHex</span><span class="p">()</span>
+<span class="c1">// digestHex -&gt; "8e59dd02f68c387c"</span>
+</code></pre>
+<h3 id='fnv-1a' class='heading'>FNV-1a</h3>
+<pre class="highlight swift"><code><span class="cm">/**
+ * 32 bit
+ */</span>
+<span class="k">let</span> <span class="nv">fnv</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="kt">FNV1a_32</span><span class="p">()</span>
+<span class="n">fnv</span><span class="o">.</span><span class="nf">update</span><span class="p">(</span><span class="s">"Hello "</span><span class="p">)</span>
+<span class="n">fnv</span><span class="o">.</span><span class="nf">update</span><span class="p">(</span><span class="s">"World!"</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="n">fnv</span><span class="o">.</span><span class="nf">digest</span><span class="p">()</span>
+<span class="c1">// digest -&gt; 0xb1ea4872</span>
+
+<span class="k">let</span> <span class="nv">digestHex</span> <span class="o">=</span> <span class="n">fnv</span><span class="o">.</span><span class="nf">digestHex</span><span class="p">()</span>
+<span class="c1">// digestHex -&gt; "b1ea4872"</span>
+
+
+<span class="cm">/**
+ * 64bit
+ */</span>
+<span class="k">let</span> <span class="nv">fnv</span> <span class="o">=</span> <span class="kt">FNV</span><span class="o">.</span><span class="kt">FNV1a_64</span><span class="p">()</span>
+<span class="n">fnv</span><span class="o">.</span><span class="nf">update</span><span class="p">(</span><span class="s">"Hello "</span><span class="p">)</span>
+<span class="n">fnv</span><span class="o">.</span><span class="nf">update</span><span class="p">(</span><span class="s">"World!"</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">digest</span> <span class="o">=</span> <span class="n">fnv</span><span class="o">.</span><span class="nf">digest</span><span class="p">()</span>
+<span class="c1">// digest -&gt; 0x8c0ec8d1fb9e6e32</span>
+
+<span class="k">let</span> <span class="nv">digestHex</span> <span class="o">=</span> <span class="n">fnv</span><span class="o">.</span><span class="nf">digestHex</span><span class="p">()</span>
+<span class="c1">// digestHex -&gt; "8c0ec8d1fb9e6e32"</span>
 </code></pre>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="https://github.com/daisuke-t-jp/FNV" target="_blank" rel="external">Daisuke T</a>. All rights reserved. (Last updated: 2019-03-05)</p>
+          <p>&copy; 2019 <a class="link" href="https://github.com/daisuke-t-jp/FNV" target="_blank" rel="external">Daisuke T</a>. All rights reserved. (Last updated: 2019-03-06)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
