@@ -15,3 +15,11 @@ disabled_rules:
     - vertical_parameter_alignment
 identifier_name:
     min_length: 1
+type_name:
+    excluded:
+        - FNV0_32
+        - FNV0_64
+        - FNV1_32
+        - FNV1_64
+        - FNV1a_32
+        - FNV1a_64
