@@ -19,6 +19,27 @@
 		026E342B221BA40F008A8531 /* FNVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E3426221BA40F008A8531 /* FNVTests.swift */; };
 		026E342C221BA40F008A8531 /* FNVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E3426221BA40F008A8531 /* FNVTests.swift */; };
 		026E342D221BA40F008A8531 /* FNVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E3426221BA40F008A8531 /* FNVTests.swift */; };
+		027ED7E3222F466D00C005D0 /* FNV0_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7E2222F466D00C005D0 /* FNV0_32.swift */; };
+		027ED7E4222F466D00C005D0 /* FNV0_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7E2222F466D00C005D0 /* FNV0_32.swift */; };
+		027ED7E5222F466D00C005D0 /* FNV0_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7E2222F466D00C005D0 /* FNV0_32.swift */; };
+		027ED7EA222F4F7600C005D0 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7E9222F4F7600C005D0 /* Common.swift */; };
+		027ED7EB222F4F7600C005D0 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7E9222F4F7600C005D0 /* Common.swift */; };
+		027ED7EC222F4F7600C005D0 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7E9222F4F7600C005D0 /* Common.swift */; };
+		027ED7EE222F52F400C005D0 /* FNV0_64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7ED222F52F400C005D0 /* FNV0_64.swift */; };
+		027ED7EF222F52F400C005D0 /* FNV0_64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7ED222F52F400C005D0 /* FNV0_64.swift */; };
+		027ED7F0222F52F400C005D0 /* FNV0_64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7ED222F52F400C005D0 /* FNV0_64.swift */; };
+		027ED7F3222F539F00C005D0 /* FNV1_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7F1222F539E00C005D0 /* FNV1_32.swift */; };
+		027ED7F4222F539F00C005D0 /* FNV1_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7F1222F539E00C005D0 /* FNV1_32.swift */; };
+		027ED7F5222F539F00C005D0 /* FNV1_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7F1222F539E00C005D0 /* FNV1_32.swift */; };
+		027ED7F6222F539F00C005D0 /* FNV1_64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7F2222F539E00C005D0 /* FNV1_64.swift */; };
+		027ED7F7222F539F00C005D0 /* FNV1_64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7F2222F539E00C005D0 /* FNV1_64.swift */; };
+		027ED7F8222F539F00C005D0 /* FNV1_64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7F2222F539E00C005D0 /* FNV1_64.swift */; };
+		027ED7FB222F53FA00C005D0 /* FNV1a_64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7F9222F53F900C005D0 /* FNV1a_64.swift */; };
+		027ED7FC222F53FA00C005D0 /* FNV1a_64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7F9222F53F900C005D0 /* FNV1a_64.swift */; };
+		027ED7FD222F53FA00C005D0 /* FNV1a_64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7F9222F53F900C005D0 /* FNV1a_64.swift */; };
+		027ED7FE222F53FA00C005D0 /* FNV1a_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7FA222F53FA00C005D0 /* FNV1a_32.swift */; };
+		027ED7FF222F53FA00C005D0 /* FNV1a_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7FA222F53FA00C005D0 /* FNV1a_32.swift */; };
+		027ED800222F53FA00C005D0 /* FNV1a_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ED7FA222F53FA00C005D0 /* FNV1a_32.swift */; };
 		0290FBD7220C0AB20076E82F /* FNV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021D6695220816C300D88FC1 /* FNV.framework */; };
 		029D316E2207CCB9009FA98A /* FNV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029D31642207CCB9009FA98A /* FNV.framework */; };
 		7E31726E221147DE004B84DF /* FNV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E31726622114789004B84DF /* FNV.framework */; };
@@ -57,6 +78,13 @@
 		026E3425221BA40F008A8531 /* alice29.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = alice29.txt; sourceTree = "<group>"; };
 		026E3426221BA40F008A8531 /* FNVTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNVTests.swift; sourceTree = "<group>"; };
 		026E3427221BA40F008A8531 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		027ED7E2222F466D00C005D0 /* FNV0_32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNV0_32.swift; sourceTree = "<group>"; };
+		027ED7E9222F4F7600C005D0 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		027ED7ED222F52F400C005D0 /* FNV0_64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNV0_64.swift; sourceTree = "<group>"; };
+		027ED7F1222F539E00C005D0 /* FNV1_32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNV1_32.swift; sourceTree = "<group>"; };
+		027ED7F2222F539E00C005D0 /* FNV1_64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNV1_64.swift; sourceTree = "<group>"; };
+		027ED7F9222F53F900C005D0 /* FNV1a_64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNV1a_64.swift; sourceTree = "<group>"; };
+		027ED7FA222F53FA00C005D0 /* FNV1a_32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNV1a_32.swift; sourceTree = "<group>"; };
 		029D31642207CCB9009FA98A /* FNV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FNV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		029D316D2207CCB9009FA98A /* FNVTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FNVTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E31724622114394004B84DF /* FNVTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FNVTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,8 +174,15 @@
 			isa = PBXGroup;
 			children = (
 				026E3419221BA3FA008A8531 /* FNV.h */,
-				026E341A221BA3FA008A8531 /* FNV.swift */,
 				026E341B221BA3FA008A8531 /* Info.plist */,
+				027ED7E9222F4F7600C005D0 /* Common.swift */,
+				026E341A221BA3FA008A8531 /* FNV.swift */,
+				027ED7E2222F466D00C005D0 /* FNV0_32.swift */,
+				027ED7ED222F52F400C005D0 /* FNV0_64.swift */,
+				027ED7F1222F539E00C005D0 /* FNV1_32.swift */,
+				027ED7F2222F539E00C005D0 /* FNV1_64.swift */,
+				027ED7FA222F53FA00C005D0 /* FNV1a_32.swift */,
+				027ED7F9222F53F900C005D0 /* FNV1a_64.swift */,
 			);
 			name = FNV;
 			path = Sources/FNV;
@@ -468,7 +503,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027ED7F7222F539F00C005D0 /* FNV1_64.swift in Sources */,
+				027ED7FF222F53FA00C005D0 /* FNV1a_32.swift in Sources */,
+				027ED7E4222F466D00C005D0 /* FNV0_32.swift in Sources */,
+				027ED7EB222F4F7600C005D0 /* Common.swift in Sources */,
+				027ED7FC222F53FA00C005D0 /* FNV1a_64.swift in Sources */,
 				026E3420221BA3FA008A8531 /* FNV.swift in Sources */,
+				027ED7EF222F52F400C005D0 /* FNV0_64.swift in Sources */,
+				027ED7F4222F539F00C005D0 /* FNV1_32.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,7 +526,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027ED7F6222F539F00C005D0 /* FNV1_64.swift in Sources */,
+				027ED7FE222F53FA00C005D0 /* FNV1a_32.swift in Sources */,
+				027ED7E3222F466D00C005D0 /* FNV0_32.swift in Sources */,
+				027ED7EA222F4F7600C005D0 /* Common.swift in Sources */,
+				027ED7FB222F53FA00C005D0 /* FNV1a_64.swift in Sources */,
 				026E341F221BA3FA008A8531 /* FNV.swift in Sources */,
+				027ED7EE222F52F400C005D0 /* FNV0_64.swift in Sources */,
+				027ED7F3222F539F00C005D0 /* FNV1_32.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +557,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027ED7F8222F539F00C005D0 /* FNV1_64.swift in Sources */,
+				027ED800222F53FA00C005D0 /* FNV1a_32.swift in Sources */,
+				027ED7E5222F466D00C005D0 /* FNV0_32.swift in Sources */,
+				027ED7EC222F4F7600C005D0 /* Common.swift in Sources */,
+				027ED7FD222F53FA00C005D0 /* FNV1a_64.swift in Sources */,
 				026E3421221BA3FA008A8531 /* FNV.swift in Sources */,
+				027ED7F0222F52F400C005D0 /* FNV0_64.swift in Sources */,
+				027ED7F5222F539F00C005D0 /* FNV1_32.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
