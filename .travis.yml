@@ -18,7 +18,7 @@ matrix:
         
         # tvOS
         - xcodebuild clean -project "FNV.xcodeproj" 
-        - xcodebuild test -project "FNV.xcodeproj" -scheme "FNV-tvOS" -sdk appletvsimulator -destination "OS=12.0,name=Apple TV 4K" -configuration Debug
+        - xcodebuild test -project "FNV.xcodeproj" -scheme "FNV-tvOS" -sdk appletvsimulator -destination "OS=12.2,name=Apple TV 4K" -configuration Debug
         
     - os: linux
       language: generic
