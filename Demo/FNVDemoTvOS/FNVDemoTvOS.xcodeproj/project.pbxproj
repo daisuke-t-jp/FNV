@@ -125,6 +125,7 @@
 				TargetAttributes = {
 					7EDDC6BA2211348F00C9FAAA = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -359,7 +360,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.FNVDemoTvOS.FNVDemoTvOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
@@ -378,7 +379,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.FNVDemoTvOS.FNVDemoTvOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;

@@ -39,7 +39,7 @@ Pod::Spec.new do |spec|
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.swift_version = "4.2"
+  spec.swift_version = "5.0"
   spec.requires_arc = true
 
 end
