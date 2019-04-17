@@ -2,7 +2,7 @@
 ------
 ![Platform](https://img.shields.io/badge/Platform-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20Linux-blue.svg)
 [![Language Swift%204.2,%205.0](https://img.shields.io/badge/Language-Swift%204.2,%205.0-orange.svg)](https://developer.apple.com/swift)
-[![Cocoapods](https://img.shields.io/cocoapods/v/FNV.svg)](https://cocoapods.org/pods/FNV)
+[![CocoaPods](https://img.shields.io/cocoapods/v/FNV.svg)](https://cocoapods.org/pods/FNV)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-green.svg)](https://github.com/Carthage/Carthage)
 [![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-green.svg)](https://github.com/apple/swift-package-manager)
 [![Build Status](https://travis-ci.org/daisuke-t-jp/FNV.svg?branch=master)](https://travis-ci.org/daisuke-t-jp/FNV)
@@ -229,3 +229,13 @@ let digest = fnv.digest()
 let digestHex = fnv.digestHex()
 // digestHex -> "8c0ec8d1fb9e6e32"
 ```
+
+
+# Demo
+
+There are demos.
+
+- [iOS](https://github.com/daisuke-t-jp/FNV/tree/master/Demo/FNVDemoiOS) 
+- [macOS](https://github.com/daisuke-t-jp/FNV/tree/master/Demo/FNVDemoMacOS) 
+- [tvOS](https://github.com/daisuke-t-jp/FNV/tree/master/Demo/FNVDemoTvOS) 
+
