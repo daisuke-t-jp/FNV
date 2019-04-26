@@ -28,9 +28,9 @@ class FNVTests: XCTestCase {
     ("testFNV1a_32_file", testFNV1a_32_file),
     ("testFNV1a_64", testFNV1a_64),
     ("testFNV1a_64_file", testFNV1a_64_file),
-    ]
+  ]
   
-
+  
   override func setUp() {
     // Put setup code here. This method is called before the invocation of each test method in the class.
   }
@@ -49,11 +49,11 @@ class FNVTests: XCTestCase {
       let fnv = FNV.FNV0_32()
       fnv.update("Hello ")
       fnv.update("World!")
-
+      
       let fnv2 = FNV.FNV0_32()
       fnv2.update(Array("Hello ".utf8))
       fnv2.update(Array("World!".utf8))
-
+      
       let fnv3 = FNV.FNV0_32()
       fnv3.update("Hello ".data(using: .utf8)!)
       fnv3.update("World!".data(using: .utf8)!)

@@ -11,7 +11,7 @@ import Foundation
 import FNV
 
 class Common {
-
+  
   static func test() {
     print("fnv0_32(\"Hello World!\") -> \(FNV.FNV0_32.digestHex("Hello World!"))")
     print("fnv0_64(\"Hello World!\") -> \(FNV.FNV0_64.digestHex("Hello World!"))")
@@ -19,7 +19,7 @@ class Common {
     print("fnv1_64(\"Hello World!\") -> \(FNV.FNV1_64.digestHex("Hello World!"))")
     print("fnv1a_32(\"Hello World!\") -> \(FNV.FNV1a_32.digestHex("Hello World!"))")
     print("fnv1a_64(\"Hello World!\") -> \(FNV.FNV1a_64.digestHex("Hello World!"))")
-
+    
     
     let bundle = Bundle(for: Common.self)
     let path = bundle.path(forResource: "alice29", ofType: "txt")!
@@ -48,7 +48,7 @@ class Common {
       fnv1_64.update(data2)
       fnv1a_32.update(data2)
       fnv1a_64.update(data2)
-
+      
       index += data2.count
       if index >= data.count {
         break

@@ -80,7 +80,7 @@ extension FNV.FNV0_32 {
 
 // MARK: - Digest(Streaming)
 extension FNV.FNV0_32 {
-
+  
   /// Reset current streaming state to initial.
   public func reset() {
     h = 0
