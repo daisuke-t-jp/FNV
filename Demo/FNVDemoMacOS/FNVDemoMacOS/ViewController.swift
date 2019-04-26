@@ -12,17 +12,17 @@ import FNV
 
 class ViewController: NSViewController {
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		
-		Common.test()
-	}
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    Common.test()
+  }
 
-	override var representedObject: Any? {
-		didSet {
-		// Update the view, if already loaded.
-		}
-	}
+  override var representedObject: Any? {
+    didSet {
+    // Update the view, if already loaded.
+    }
+  }
 
 
 }

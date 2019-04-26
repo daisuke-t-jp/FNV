@@ -12,11 +12,11 @@ import FNV
 
 class ViewController: UIViewController {
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		
-		Common.test()
-	}
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    Common.test()
+  }
 
 
 }
