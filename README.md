@@ -14,8 +14,6 @@
 A framework includes FNV-0(32/64bit), FNV-1(32/64bit), FNV-1a(32/64bit) functions.  
   
 Original FNV algorithm created by Glenn Fowler, Landon Curt Noll, and Kiem-Phong Vo.  
-  
-[Documentation](https://daisuke-t-jp.github.io/FNV/index.html)
 
 
 # Requirements
