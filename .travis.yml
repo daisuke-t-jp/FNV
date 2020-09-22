@@ -10,7 +10,7 @@ matrix:
       script:
         # iOS
         - xcodebuild clean -project "FNV.xcodeproj" 
-        - xcodebuild test -project "FNV.xcodeproj" -scheme "FNV-iOS" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone X" -configuration Debug
+        - xcodebuild test -project "FNV.xcodeproj" -scheme "FNV-iOS" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 11 Pro Max" -configuration Debug
         
         # macOS
         - xcodebuild clean -project "FNV.xcodeproj" 
