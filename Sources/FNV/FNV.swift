@@ -10,7 +10,7 @@ import Foundation
 
 /// FNV class
 public class FNV {
-  
+
 }
 
 
