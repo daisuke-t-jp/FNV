@@ -37,27 +37,6 @@ end
 ## Carthage
 `github "daisuke-t-jp/FNV"`
 
-## Swift Package Manager
-```swift
-import PackageDescription
-
-let package = Package(
-    name: "YOUR_PACKAGE_NAME",
-    dependencies: [
-        // Swift 4.2
-        .package(url: "https://github.com/daisuke-t-jp/FNV.git", .exact("1.0.11"))
-    
-        // Swift 5.0
-        .package(url: "https://github.com/daisuke-t-jp/FNV.git", from: "1.0.12")
-    ],
-    targets: [
-        .target(
-            name: "YOUR_TARGET_NAME",
-            dependencies: ["FNV"]),
-    ]
-)
-```
-
 
 # Usage
 
