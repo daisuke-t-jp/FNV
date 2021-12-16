@@ -22,7 +22,7 @@ let package = Package(
         .target(
             name: "FNV",
             dependencies: [],
-            exclude: ["FNV.xcodeproj", "README.md", "Sources/FNV/Info.plist", "Sources/FNV/FNV.h"]),
+            path: "Sources/FNV/"),
         .testTarget(
             name: "FNVTests",
             dependencies: ["FNV"]),
