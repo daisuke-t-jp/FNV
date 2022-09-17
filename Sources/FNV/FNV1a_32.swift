@@ -37,20 +37,16 @@ extension FNV.FNV1a_32 {
     ///
     /// - Parameter array: A source data for hash.
     /// - Returns: A generated digest.
-    static public func digest(_ array: [UInt8]) -> UInt32 {
-        return Common.fnv1a(array, offsetBasis: Common.offsetBasis32, prime: Common.prime32)
+    static public func digest<S: Sequence>(_ sequence: S) -> UInt32 where S.Element == UInt8 {
+        return Common.fnv1a(sequence, offsetBasis: Common.offsetBasis32, prime: Common.prime32)
     }
     
     /// Overload func for "digest(_ array: [UInt8])".
     static public func digest(_ string: String) -> UInt32 {
-        return digest(Array(string.utf8))
+        return digest(string.utf8)
     }
-    
-    /// Overload func for "digest(_ array: [UInt8])".
-    static public func digest(_ data: Data) -> UInt32 {
-        return digest([UInt8](data))
-    }
-    
+
+
     
     /// Generate digest's hex string.
     ///
@@ -90,21 +86,16 @@ extension FNV.FNV1a_32 {
     /// Update streaming state.
     ///
     /// - Parameter array: A source data for hash.
-    public func update(_ array: [UInt8]) {
-        h = Common.fnv1a(array, offsetBasis: h, prime: Common.prime32)
+    public func update<S: Sequence>(_ sequence: S) where S.Element == UInt8 {
+        h = Common.fnv1a(sequence, offsetBasis: h, prime: Common.prime32)
     }
     
     /// Overload func for "update(_ array: [UInt8])".
     public func update(_ string: String) {
-        return update(Array(string.utf8))
+        return update(string.utf8)
     }
     
-    /// Overload func for "update(_ array: [UInt8])".
-    public func update(_ data: Data) {
-        return update([UInt8](data))
-    }
-    
-    
+
     
     /// Generate digest.
     ///

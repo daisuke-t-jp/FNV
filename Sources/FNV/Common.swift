@@ -38,10 +38,10 @@ extension Common {
 // MARK: - Algorithm
 extension Common {
     
-    static func fnv1<T: FixedWidthInteger>(_ array: [UInt8], offsetBasis: T, prime: T) -> T {
+    static func fnv1<S: Sequence, T: FixedWidthInteger>(_ sequence: S, offsetBasis: T, prime: T) -> T  where S.Element == UInt8 {
         var hash: T = offsetBasis
         
-        for elm in array {
+        for elm in sequence {
             hash = hash &* prime
             hash = hash ^ T(elm)
         }
@@ -49,10 +49,10 @@ extension Common {
         return hash
     }
     
-    static func fnv1a<T: FixedWidthInteger>(_ array: [UInt8], offsetBasis: T, prime: T) -> T {
+    static func fnv1a<S: Sequence, T: FixedWidthInteger>(_ sequence: S, offsetBasis: T, prime: T) -> T where S.Element == UInt8 {
         var hash: T = offsetBasis
         
-        for elm in array {
+        for elm in sequence {
             hash = hash ^ T(elm)
             hash = hash &* prime
         }
