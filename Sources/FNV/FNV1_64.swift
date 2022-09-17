@@ -35,45 +35,35 @@ extension FNV.FNV1_64 {
     
     /// Generate digest.
     ///
-    /// - Parameter array: A source data for hash.
+    /// - Parameter sequence: A source data for hash.
     /// - Returns: A generated digest.
-    static public func digest(_ array: [UInt8]) -> UInt64 {
-        return Common.fnv1(array, offsetBasis: Common.offsetBasis64, prime: Common.prime64)
+    static public func digest<S: Sequence>(_ sequence: S) -> UInt64 where S.Element == UInt8 {
+        return Common.fnv1(sequence, offsetBasis: Common.offsetBasis64, prime: Common.prime64)
     }
     
-    /// Overload func for "digest(_ array: [UInt8])".
+    /// Overload func for "digest(_ sequence: Sequence)".
     static public func digest(_ string: String) -> UInt64 {
-        return digest(Array(string.utf8))
+        return digest(string.utf8)
     }
-    
-    /// Overload func for "digest(_ array: [UInt8])".
-    static public func digest(_ data: Data) -> UInt64 {
-        return digest([UInt8](data))
-    }
-    
+
+
     
     /// Generate digest's hex string.
     ///
     /// - Parameters:
-    ///   - array: A source data for hash.
+    ///   - sequence: A source data for hash.
     /// - Returns: A generated digest's hex string.
-    static public func digestHex(_ array: [UInt8]) -> String {
-        let h = digest(array)
+    static public func digestHex<S: Sequence>(_ sequence: S) -> String where S.Element == UInt8 {
+        let h = digest(sequence)
         return Common.UInt64ToHex(h)
     }
     
-    /// Overload func for "digestHex(_ array: [UInt8])".
+    /// Overload func for "digestHex(_ sequence: Sequence)".
     static public func digestHex(_ string: String) -> String {
         let h = digest(string)
         return Common.UInt64ToHex(h)
     }
-    
-    /// Overload func for "digestHex(_ array: [UInt8])".
-    static public func digestHex(_ data: Data) -> String {
-        let h = digest(data)
-        return Common.UInt64ToHex(h)
-    }
-    
+
 }
 
 
@@ -89,21 +79,17 @@ extension FNV.FNV1_64 {
     
     /// Update streaming state.
     ///
-    /// - Parameter array: A source data for hash.
-    public func update(_ array: [UInt8]) {
-        h = Common.fnv1(array, offsetBasis: h, prime: Common.prime64)
+    /// - Parameter sequence: A source data for hash.
+    public func update<S: Sequence>(_ sequence: S) where S.Element == UInt8 {
+        h = Common.fnv1(sequence, offsetBasis: h, prime: Common.prime64)
     }
     
-    /// Overload func for "update(_ array: [UInt8])".
+    /// Overload func for "update(_ sequence: Sequence)".
     public func update(_ string: String) {
-        return update(Array(string.utf8))
+        return update(string.utf8)
     }
     
-    /// Overload func for "update(_ array: [UInt8])".
-    public func update(_ data: Data) {
-        return update([UInt8](data))
-    }
-    
+
     
     
     /// Generate digest.
