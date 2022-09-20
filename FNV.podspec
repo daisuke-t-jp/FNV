@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.name         = "FNV"
-  spec.version      = "1.1.1"
+  spec.version      = "1.1.2"
   spec.summary      = "FNV hash framework in Swift."
 
   spec.description  = <<-DESC
